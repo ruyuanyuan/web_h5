@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>generator</title>
+</head>
+<body>
+  
+</body>
+</html>
+<script>
+function* show(){
+  console.log('第一步')
+  yield
+  console.log('第二步')
+}
+let go=show()
+go.next()
+console.log('中间停顿')
+go.next()
+
+function* show1(){
+  console.log('第一步')
+  let a= yield
+  console.log('第二步',a)
+}
+let go1=show1()
+go1.next()
+console.log('中间停顿')
+go1.next(17)
+</script>

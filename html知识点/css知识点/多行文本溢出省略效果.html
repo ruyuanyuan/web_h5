@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>多行文本溢出省略效果</title>
+</head>
+<style>
+  div{
+    width:300px;
+    margin-bottom: 40px;
+  }
+  .content1{
+    overflow: hidden; text-overflow:ellipsis; white-space: nowrap;
+  }
+  .content2{
+    display: -webkit-box;
+     -webkit-box-orient: vertical; 
+     -webkit-line-clamp: 3; 
+      overflow: hidden; 
+  }
+  .content3{
+    position: relative; 
+    line-height: 20px; 
+    max-height: 60px;
+    overflow: hidden;
+  }
+  .content3::after{
+    content: "..."; 
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    padding-left: 40px; 
+    background: -webkit-linear-gradient(left, transparent, #fff 55%); 
+    background: -o-linear-gradient(right, transparent, #fff 55%); 
+    background: -moz-linear-gradient(right, transparent, #fff 55%);
+     background: linear-gradient(to right, transparent, #fff 55%); 
+  }
+  .content4{
+    height:60px;
+  }
+</style>
+<body>
+  <h2>如何用 css 或 js 实现多行文本溢出省略效果，考虑兼容性</h2>
+  <div class='content1'> css 或 js 实现多行文本溢出省略效果 css 或 js 实现多行文本溢出省略效果 css 或 js 实现多行文本溢出省略效果 css 或 js 实现多行文本溢出省略效果</div>
+  <div class='content2'> css 或 js 实现多行文本溢出省略效果 css 或 js 实现多行文本溢出省略效果 css 或 js 实现多行文本溢出省略效果 css 或 js 实现多行文本溢出省略效果 css 或 js 实现多行文本溢出省略效果</div>
+  <div class='content3'> css 或 js 实现多行文本溢出省略效果 css 或 js 实现多行文本溢出省略效果 css 或 js 实现多行文本溢出省略效果 css 或 js 实现多行文本溢出省略效果</div>
+  <div class='content4'> css 或 js 实现多行文本溢出省略效果 css 或 js 实现多行文本溢出省略效果 css 或 js 实现多行文本溢出省略效果 css 或 js 实现多行文本溢出省略效1</div>
+</body>
+</html>
+<script>
+  const p = document.querySelector('.content4')
+  let words = p.innerHTML.split(/(?<=[\u4e00-\u9fa5])|(?<=\w*?\b)/g)
+  console.log(words)
+  console.log(p.scrollHeight,p.clientHeight)
+  while (p.scrollHeight > p.clientHeight) {
+    words.pop()
+    p.innerHTML = words.join('') + '...'
+  }
+</script>

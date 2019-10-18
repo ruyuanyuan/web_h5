@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>数组操作</title>
+</head>
+<style>
+  div{
+    width:20px;
+    height:10px;
+  }
+
+</style>
+<body>
+  <div></div>
+  <div></div>
+  <div></div>
+</body>
+</html>
+<script>
+// 展开符 ... 数组操作
+let arr1=[1,4,5,7,8,3,5]
+let arr2=[4,3,6,2,5,1,6]
+arr2.push(...arr1)
+// console.log(arr2)
+
+//map 数组
+let arr3=[
+  {
+    id:1,
+    name:'ceshi1',
+    value:1
+  },
+  {
+    id:2,
+    name:'ceshi2',
+    value:2
+  },
+  {
+    id:3,
+    name:'ceshi3',
+    value:3
+  }
+]
+arr3.map((item,index)=>{
+  return item.value=item.value*2
+})
+// arr3.map((item,index)=>item.value=item.value*2)
+// console.log(arr3)
+//foreach 只是循环用，无返回值，也不会改变原数组。如果数组元素是对象，则会改变对象的值。
+let arr4= arr3.forEach((item,index)=>{
+  item.value += 30
+  // console.log(item)
+})
+// console.log(arr3) 
+// console.log(arr4) //undefined
+
+
+var arr5 = [1,2,3,4];
+ 
+var arr6 = [{a:1},{a:2},{a:3}];
+ 
+arr5.forEach(item =>{
+    item = item * item;
+});
+arr6.forEach(item =>{
+    item.a = item.a * item.a;
+});
+ 
+// console.log(arr5); // [1,2,3,4]
+ 
+// console.log(arr6); // [{a:1},{a:4},{a:9}]
+
+// reduce: 汇总。下面代码中的 tmp 可以理解为前一个值
+//关于 reduce 的参数，其实有五个，tmp，item，index，array，init。
+// 如果没有传入 init，初始值就会取数组的第一个值，并且内部调用时，index 从1开始。
+
+let arr7 = [29,39,30,29,45,32,46]
+let avg=arr7.reduce((tmp,item,index)=>{
+  // console.log(tmp,item,index)
+  tmp += item;
+  if(index === arr7.length-1) tmp /= (index+1);
+  return tmp;
+})
+// console.log(avg); // 也就是这几个数的平均值
+
+//如果传入了初始值 10000，index 就从0开始。tmp 的初始值也就是10000，结果自然也不同了。
+
+/*
+  let arr = [12,35,56,79,56];
+  let avg = arr.reduce((tmp,item,index,array) => {
+    console.log(tmp,item,index,array);
+    tmp += item;
+    if(index === arr.length-1) {
+      console.log('我要求平均数了');
+      tmp /= (index+1);
+    }
+    return tmp;
+  }, 10000)
+  console.log(avg);
+
+  10000 12 0 [ 12, 35, 56, 79, 56 ]
+  10012 35 1 [ 12, 35, 56, 79, 56 ]
+  10047 56 2 [ 12, 35, 56, 79, 56 ]
+  10103 79 3 [ 12, 35, 56, 79, 56 ]
+  10182 56 4 [ 12, 35, 56, 79, 56 ]
+  我要求平均数了
+  2047.6
+ */
+
+//  Array.from(arr)的作用就是将 array-like 类型的数据转变成 array。
+  let aDiv = document.getElementsByTagName('div');
+  // console.log(aDiv);
+  // aDiv 其实并不是一个数组，而是个 array-like，在控制台中打印出来是个 HTMLCollection，所以不能用 forEach
+  // 这时候就需要用 Array.from(arr)将一个 array-like 转换成一个真正的 array
+
+  // aDiv.forEach(div => {
+  //   div.style.background = 'red';
+  // })
+
+  Array.from(aDiv).forEach(div => {
+    div.style.background = 'red';
+  })
+ 
+//filter 过滤 返回值为 满足条件的数组
+let arr8 = [35,32,45,23,47,27]
+let arr9 =arr8.filter(item=>item>32)
+console.log(arr9)
+
+//some 只要有一个满足就返回true 返回值为 Blob值
+let arr10 = [35,32,45,23,47,27]
+let flag=arr10.some(item=>item>46)
+console.log(flag)
+
+//every 所有都满足就返回true 返回值为 Blob值
+let arr11 = [35,32,45,23,47,27]
+let flag1=arr10.every(item=>item>40)
+console.log(flag1)
+</script>

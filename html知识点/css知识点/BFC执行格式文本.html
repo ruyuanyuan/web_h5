@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BFC执行格式文本</title>
+  </head>
+  <style>
+    .content {
+      width: 100%;
+      height: auto;
+      background-color: #eee;
+    }
+    .box {
+      height: 20px;
+    }
+    .box1 {
+      width: 400px;
+      background-color: red;
+    }
+
+    .box2 {
+      width: 300px;
+      background-color: green;
+    }
+
+    .box3 {
+      width: 100px;
+      background-color: yellow;
+      float: left;
+    }
+
+    .box4 {
+      width: 200px;
+      height: 40px;
+      background-color: purple;
+    }
+    .marginBox {
+      width: 200px;
+      height: 40px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      background-color: yellow;
+    }
+    .column:nth-of-type(1) {
+      float: left;
+      width: 200px;
+      height: 300px;
+      margin-right: 10px;
+      background-color: red;
+    }
+
+    .column:nth-of-type(2) {
+      overflow: hidden; /*创建bfc*/
+      height: 300px;
+      background-color: purple;
+    }
+    .column1:nth-of-type(1),
+    .column1:nth-of-type(2) {
+      float: left;
+      width: 100px;
+      height: 300px;
+      background-color: green;
+    }
+    .column1:nth-of-type(2) {
+      float: right;
+    }
+    .column1:nth-of-type(3) {
+      overflow: hidden; /*创建bfc*/
+      height: 300px;
+      background-color: red;
+    }
+    .left {
+      float: left;
+      width: 100px;
+      height: 100px;
+      background-color: yellow;
+    }
+
+    p {
+      background-color: green;
+      /* overflow: hidden; */ /*创建bfc*/
+    }
+  </style>
+  <body>
+    <pre>
+一、何为BFC
+
+       BFC（Block Formatting Context）格式化上下文，是Web页面中盒模型布局的CSS渲染模式，指一个独立的渲染区域或者说是一个隔离的独立容器。
+
+二、形成BFC的条件
+
+      1、浮动元素，float 除 none 以外的值； 
+      2、定位元素，position（absolute，fixed）； 
+      3、display 为以下其中之一的值 inline-block，table-cell，table-caption； 
+      4、overflow 除了 visible 以外的值（hidden，auto，scroll）；
+
+三、BFC的特性
+
+      1.内部的Box会在垂直方向上一个接一个的放置。
+      2.垂直方向上的距离由margin决定
+      3.bfc的区域不会与float的元素区域重叠。
+      4.计算bfc的高度时，浮动元素也参与计算
+      5.bfc就是页面上的一个独立容器，容器里面的子元素不会影响外面元素。
+</pre
+    >
+    <h3>
+      （1）BFC中的盒子对齐
+      特性的第一条是：内部的Box会在垂直方向上一个接一个的放置。
+    </h3>
+    <div class="content">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+    </div>
+    <h3>（2）外边距折叠</h3>
+    <h6>
+      特性的第二条：垂直方向上的距离由margin决定<br />
+      在常规文档流中，两个兄弟盒子之间的垂直距离是由他们的外边距所决定的，但不是他们的两个外边距之和，而是以较大的为准。
+    </h6>
+    <div class="content">
+      <div class="marginBox"></div>
+      <div class="marginBox"></div>
+    </div>
+    <h3>（3）不被浮动元素覆盖</h3>
+    <h6>
+      左边固定宽度，右边不设宽，因此右边的宽度自适应，随浏览器窗口大小的变化而变化。
+    </h6>
+    <div class="content">
+      <div class="column"></div>
+      <div class="column"></div>
+    </div>
+    <h3>
+      左右两边固定宽度，中间不设宽，因此中间的宽度自适应，随浏览器的大小变化而变化。
+    </h3>
+    <div class="content">
+      <div class="column1"></div>
+      <div class="column1"></div>
+      <div class="column1"></div>
+    </div>
+    <h3>防止字体环绕</h3>
+    <h3>
+      浮动的盒子会遮盖下面的盒子，但是下面盒子里的文字是不会被遮盖的，文字反而还会环绕浮动的盒子。
+    </h3>
+    <div class="content" style='width:300px;'>
+      <div class="left"></div>
+      <p>
+        你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好
+        你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好
+        你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好
+      </p>
+    </div>
+  </body>
+</html>

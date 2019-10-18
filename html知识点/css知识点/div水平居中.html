@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>div水平居中</title>
+</head>
+<style>
+.content{
+  width:100%;
+  height:400px;
+  background:#dfdfdf;
+  margin-top:40px;
+}
+.child{
+  width:100px;
+  height:100px;
+  background:blue;
+}
+.content1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content2{
+  position: relative;
+}
+.child2{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%)
+}
+.content3{
+  display: grid;
+}
+.child3{
+  justify-self: center;
+  align-self: center;
+}
+.content4{
+  display: flex;
+}
+.child4{
+  margin:auto;
+}
+.content5{
+  text-align: center;
+}
+.content5::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+.child5{
+  display: inline-block;
+  vertical-align: middle;
+}
+</style>
+<body>
+  <div class='content content1'>
+    <div class='child'></div>
+  </div>
+  <div class='content content2'>
+    <div class='child child2'></div>
+  </div>
+  <div class='content content3'>
+    <div class='child child3'></div>
+  </div>
+  <div class='content content4'>
+    <div class='child child4'></div>
+  </div>
+  <div class='content content4'>
+    <div class='child child4'></div>
+  </div>
+  <pre>
+      IFC（Inline formatting contexts）：内联格式上下文 IFC的line box（线框）高度由其包含行内元素中最高的实际高度计算而来（不受到竖直方向的padding/margin影响)IFC中的line box一般左右都贴紧整个IFC，但是会因为float元素而扰乱。
+      float元素会位于IFC与与line box之间，使得line box宽度缩短。 同个ifc下的多个line box高度会不同 IFC中时不可能有块级元素的，当插入块级元素时（如p中插入div）会产生两个匿名块与div分隔开，即产生两个IFC，每个IFC对外表现为块级元素，与div垂直排列。
+       那么IFC一般有什么用呢？ 水平居中：当一个块要在环境中水平居中时，设置其为inline-block则会在外层产生IFC，通过text-align则可以使其水平居中。 
+       垂直居中：创建一个IFC，用其中一个元素撑开父元素的高度，然后设置其vertical-align:middle，其他行内元素则可以在此父元素下垂直居中。
+  </pre>
+  <div class='content content5'>
+    <div class='child child5'></div>
+  </div>
+</body>
+</html>

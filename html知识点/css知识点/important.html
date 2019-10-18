@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>important</title>
+  </head>
+  <style>
+    .img1 {
+      max-width: 300px;
+      display: block;
+    }
+    .img2 {
+      display: block;
+      transform: scale(0.625);
+    }
+    .img3 {
+      display: block;
+      box-sizing: border-box;
+      padding: 0 90px;
+    }
+
+    .img4 {
+      display: block;
+      animation: test 0s forwards;
+    }
+    @keyframes test {
+      from {
+        width: 300px;
+      }
+      to {
+        width: 300px;
+      }
+    }
+  </style>
+  <body>
+    <h3>
+      已知如下代码，如何修改才能让图片宽度为 300px ？注意下面代码不可修改。
+    </h3>
+    <code>
+      &lt; img src="1.png" style="width:480px!important;" &gt;
+    </code>
+    <img src="1.png" class="img1" style="width:480px!important;" alt="" />
+    <img src="1.png" class="img2" style="width:480px!important;" alt="" />
+    <img src="1.png" class="img3" style="width:480px!important;" alt="" />
+    <img src="1.png" class="img4" style="width:480px!important;" alt="" />
+    <pre>
+      1.css方法 max-width:300px;覆盖其样式；
+      2. transform: scale(0.625)；按比例缩放图片；<b>(仍占据空间)</b>
+      3.js方法 document.getElementsByTagName("img")[0].setAttribute("style","width:300px!important;")
+  </pre
+    >
+  </body>
+</html>

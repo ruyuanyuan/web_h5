@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>箭头函数</title>
+</head>
+<body>
+  
+</body>
+</html>
+<script>
+  // 箭头函数 匿名函数 普通函数
+  window.onload=function(){
+   //  普通函数
+   a(1,2,3,34,56,43,434,9,34)
+   function a(...w){
+      console.log(w)
+    }
+    a(1,2,3,34,56,43,434,9,34)
+    console.log(aa(2,4)) //报错
+    // 匿名函数
+    let aa= (a,b)=>a+b
+    console.log(aa(2,4))
+  }
+
+</script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>面向对象</title>
+</head>
+<body>
+  
+</body>
+</html>
+<script>
+class Person {
+  constructor(name,age,address) {
+    this.name = name;
+    this.age = age;
+    this.address = address;
+  }
+  introduce() {
+    console.log(`大家好，我叫${this.name}，今年${this.age}岁，家在${this.address}`);
+  }
+}
+
+class Student extends Person{
+  constructor(name,age,address,major) {
+    super(name,age,address);
+    this.major = major;
+  }
+
+  introduce() {
+    console.log(`大家好，我叫${this.name}，今年${this.age}岁，家在${this.address}， 专业是${this.major}`);
+  }
+}
+
+let person = new Person('ethan', 24, '包邮区');
+person.introduce();  // 大家好，我叫ethan，今年24岁，家在包邮区
+
+let student = new Student('zyc', 18, '南京', '车辆工程');
+student.introduce(); // 大家好，我叫zyc，今年18岁，家在南京， 专业是车辆工程
+</script>

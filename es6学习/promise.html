@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>promise</title>
+</head>
+<body>
+  
+</body>
+</html>
+<script>
+/**
+Promise
+主要是用来解决异步操作。
+
+同步：串行 简单，方便
+异步：并行 性能高，体验好
+这是 promise 的基本用法
+*/
+let p = new Promise((resolve, reject) => {
+    $.ajax({
+        url: '1.txt',
+        dataType: 'json',
+        success(json){
+            resolve(json);
+        },
+        error(err){
+            reject(err);
+        }
+    })
+});
+p.then(json=>{
+    console.log('成功',json);
+}, err=>{
+    console.log('获取失败');
+})
+
+// promise.all
+
+let p = new Promise((resolve, reject) => {
+    $.ajax({
+        url: '1.txt',
+        dataType: 'json',
+        success(json){
+            resolve(json);
+        },
+        error(err){
+            reject(err);
+        }
+    })
+});
+
+let p1 = new Promise((resolve, reject) => {
+    $.ajax({
+        url: '2.txt',
+        dataType: 'json',
+        success(json){
+            resolve(json);
+        },
+        error(err){
+            reject(err);
+        }
+    })
+});
+
+let p2 = new Promise((resolve, reject) => {
+    $.ajax({
+        url: '3.json',
+        dataType: 'json',
+        success(json){
+            resolve(json);
+        },
+        error(err){
+            reject(err);
+        }
+    })
+});
+
+Promise.all([p,p1,p2]).then(arr=>{
+    console.log('成功',arr);
+}, err=>{
+    console.log('获取失败');
+})
+
+
+Promise.all([
+    $.ajax({url: '1.txt', dataType: 'json'}),
+    $.ajax({url: '2.txt', dataType: 'json'}),
+    $.ajax({url: '3.json', dataType: 'json'}),
+]).then(arr=>{
+    let [a, b, c] = arr;
+    console.log('成功',a,b,b);
+}, err=>{
+    console.log('获取失败');
+})
+
+// Promise.race
+// 只要有一个请求成功就进行下一步，所以相应的返回值也不会是数组了，而是那个最先返回的结果。
+
+
+
+</script>
