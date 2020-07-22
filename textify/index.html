@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>jQuery长文本分页特效 </title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/textify.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/textify-min.js"></script>
+<script type="text/javascript">
+            $(document)
+                .ready(function () {
+
+                $('.longText')
+                    .textify({
+                    numberOfColumn: 1,
+                    margin: 20,
+                    padding: 15,
+                    width: "auto",
+                    height: "auto",
+                    showNavigation: true,
+                    textAlign: 'justify',
+                    isZoom:false,
+                    startPage:2
+                })
+                $('.longText2')
+                    .textify({
+                    numberOfColumn: 4,
+                    margin: 20,
+                    padding: 15,
+                    width: "auto",
+                    height: "auto",
+                    showNavigation: true,
+                    textAlign: 'justify'
+                })
+
+
+            })
+        </script>
+</head>
+<body>
+<div id="main-header" class="clearfix">
+<div class="wrapper">
+<div class="col span_6">
+<img src="images/demo-images/logo.png" id="logo" />
+<div id="content-logo">
+<h1>Textify</h1>
+<h4>Columnize and Paginate Your Long Text</h4>
+</div>
+</div>
+</div>
+</div>
+<div class="full-width-wrap clearfix">
+<div class="wrapper">
+<h2>Fixed-Width Layout</h2>
+<div class="wrapContent bg1">
+<div class="longText">
+<p>
+<img src="images/demo-images/image1.jpg" />Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor
+incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.</p>
+<p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
+architecto beatae vitae dicta sunt, explicabo.</p>
+<p>Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut
+fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem
+sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor
+sit, amet, consectetur, adipisci v'elit, sed quia non numquam eius modi
+tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
+iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae
+consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
+[33] At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis
+praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias
+excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa,
+qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore,
+cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id,
+quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis
+dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut
+rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et
+molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus,
+ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
+doloribus asperiores repellat.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor
+incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.</p>
+<p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
+architecto beatae vitae dicta sunt, explicabo.</p>
+<p>Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut
+fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem
+sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor
+sit, amet, consectetur, adipisci v'elit, sed quia non numquam eius modi
+tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
+iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae
+consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
+[33] At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis
+praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias
+excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa,
+qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore,
+cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id,
+quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis
+dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut
+rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et
+molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus,
+ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
+doloribus asperiores repellat.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor
+incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.</p>
+<p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
+architecto beatae vitae dicta sunt, explicabo.</p>
+<p>Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut
+fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem
+sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor
+sit, amet, consectetur, adipisci v'elit, sed quia non numquam eius modi
+tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
+iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae
+consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
+[33] At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis
+praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias
+excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa,
+qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore,
+cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id,
+quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis
+dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut
+rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et
+molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus,
+ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
+doloribus asperiores repellat.</p>
+</div>
+<div class="col span_2">
+<p><strong>Textify</strong> is a jQuery plugin that allows you to automatically
+create an attractive and modern layout for your contents, avoiding to show
+your users longer and boring texts. You can choose from a variety of customizations,
+including the possibility of having a responsive template.</p>
+<p>Take a look at <strong>fullscreen layout</strong> in your mobile device
+or try to resize your browser to see the effect.</p>
+<p><a class="action-button" href="fullscreen.html" target="_blank">View Fullscreen Layout &#9656;</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="full-width-wrap-white clearfix">
+<div class="wrapper">
+<h2>Full-width Layout</h2>
+<div class="wrapContent bg2">
+<div class="longText2">
+<p>
+<img src="images/demo-images/image1.jpg" />Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor
+incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.</p>
+<p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
+architecto beatae vitae dicta sunt, explicabo.</p>
+<p>Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut
+fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem
+sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor
+sit, amet, consectetur, adipisci v'elit, sed quia non numquam eius modi
+tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
+iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae
+consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
+[33] At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis
+praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias
+excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa,
+qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore,
+cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id,
+quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis
+dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut
+rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et
+molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus,
+ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
+doloribus asperiores repellat.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor
+incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.</p>
+<p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
+architecto beatae vitae dicta sunt, explicabo.</p>
+<p>Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut
+fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem
+sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor
+sit, amet, consectetur, adipisci v'elit, sed quia non numquam eius modi
+tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
+iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae
+consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
+[33] At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis
+praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias
+excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa,
+qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore,
+cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id,
+quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis
+dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut
+rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et
+molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus,
+ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
+doloribus asperiores repellat.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor
+incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.</p>
+<p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
+architecto beatae vitae dicta sunt, explicabo.</p>
+<p>Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut
+fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem
+sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor
+sit, amet, consectetur, adipisci v'elit, sed quia non numquam eius modi
+tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
+iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae
+consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
+[33] At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis
+praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias
+excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa,
+qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore,
+cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id,
+quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis
+dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut
+rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et
+molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus,
+ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
+doloribus asperiores repellat.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="full-width-wrap-white clearfix">
+<div class="wrapper">
+<h2>Features</h2>
+<div class="wrapContent">
+<ul class="features">
+<li>
+<h4>Cross browser & cross platform</h4>
+<p>Textify is compatible with all major browsers (including ie7 to ie9, Firefox
+Chrome, Opera, Safari) and mobile platforms like iphone / ipad.</p>
+</li>
+<li>
+<h4>Touch-friendly</h4>
+<p>You can use it in a touch device to move pages</p>
+</li>
+<li>
+<h4>Responsive</h4>
+<p>Size of pages can be dynamically changed.</p>
+</li>
+<li>
+<h4>Easy to customize</h4>
+<p>Textify is easy and highly customizable. You can specify a static number
+of columns, or you can just use the default settings. The styles are set
+in css for easy editing.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

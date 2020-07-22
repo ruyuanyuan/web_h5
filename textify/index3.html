@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+<style>
+* {
+font-size:10.2pt;
+font-family:tahoma;
+line-height:150%;
+}
+.divContent
+{
+border:1px solid red;
+background-color:#FFD2D3;
+width:500px;
+word-break:break-all;
+margin:10px 0px 10px;
+padding:10px;
+}
+</style>
+</HEAD>
+<BODY>
+header
+<div id="divPagenation"></div>
+<div id="divContent"></div>
+footer
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+s="<p>女老师竭力向孩子们证明，学习好功课的重要性。 </p><p>她说：“牛顿坐在树下，眼睛盯着树在思考，这时，有一个苹果落在他的头上，于是他发现了万有引力定律，孩子们，你们想想看，做一位伟大的科学家多么好，多么神气啊，要想做到这一点，就必须好好学习。” </p><p>“班上一个调皮鬼对此并不满意。他说：“兴许是这样，可是，假如他坐在学校里，埋头书本，那他就什么也发现不了啦。” </p><p>女老师竭力向孩子们证明，学习好功课的重要性。 </p><p>她说：“牛顿坐在树下，眼睛盯着树在思考，这时，有一个苹果落在他的头上，于是他发现了万有引力定律，孩子们，你们想想看，做一位伟大的科学家多么好，多么神气啊，要想做到这一点，就必须好好学习。” </p><p>“班上一个调皮鬼对此并不满意。他说：“兴许是这样，可是，假如他坐在学校里，埋头书本，那他就什么也发现不了啦。” </p><p>女老师竭力向孩子们证明，学习好功课的重要性。 </p><p>她说：“牛顿坐在树下，眼睛盯着树在思考，这时，有一个苹果落在他的头上，于是他发现了万有引力定律，孩子们，你们想想看，做一位伟大的科学家多么好，多么神气啊，要想做到这一点，就必须好好学习。” </p><p>“班上一个调皮鬼对此并不满意。他说：“兴许是这样，可是，假如他坐在学校里，埋头书本，那他就什么也发现不了啦。” </p><p>女老师竭力向孩子们证明，学习好功课的重要性。 </p><p>她说：“牛顿坐在树下，眼睛盯着树在思考，这时，有一个苹果落在他的头上，于是他发现了万有引力定律，孩子们，你们想想看，做一位伟大的科学家多么好，多么神气啊，要想做到这一点，就必须好好学习。” </p><p>“班上一个调皮鬼对此并不满意。他说：“兴许是这样，可是，假如他坐在学校里，埋头书本，那他就什么也发现不了啦。” </p><p>女老师竭力向孩子们证明，学习好功课的重要性。 </p><p>她说：“牛顿坐在树下，眼睛盯着树在思考，这时，有一个苹果落在他的头上，于是他发现了万有引力定律，孩子们，你们想想看，做一位伟大的科学家多么好，多么神气啊，要想做到这一点，就必须好好学习。” </p><p>“班上一个调皮鬼对此并不满意。他说：“兴许是这样，可是，假如他坐在学校里，埋头书本，那他就什么也发现不了啦。” </p>";
+function DHTMLpagenation(content) { with (this)
+{
+ // client static html file pagenation
+ // Scipit by blueDestiny
+
+ this.content=content;
+ this.contentLength=content.length;
+ this.pageSizeCount;
+ this.perpageLength=100; //default perpage byte length.
+ this.currentPage=1;
+ //this.regularExp=/.+[\?\&]{1}page=(\d+)/;
+ this.regularExp=/\d+/;
+
+ this.divDisplayContent;
+ this.contentStyle=null;
+ this.strDisplayContent="";
+ this.divDisplayPagenation;
+ this.strDisplayPagenation="";
+ 
+ arguments.length==2?perpageLength=arguments[1]:'';
+
+ try {
+  divExecuteTime=document.createElement("DIV");
+  document.body.appendChild(divExecuteTime);
+ }
+ catch(e)
+ {
+ }
+
+ if(document.getElementById("divPagenation"))
+ {
+  divDisplayPagenation=document.getElementById("divPagenation");
+ }
+ else
+ {
+  try
+  {
+   divDisplayPagenation=document.createElement("DIV");
+   divDisplayPagenation.id="divPagenation";
+   document.body.appendChild(divDisplayPagenation);
+  }
+  catch(e)
+  {
+   return false;
+  }
+ }
+ if(document.getElementById("divContent"))
+ {
+  divDisplayContent=document.getElementById("divContent");
+ }
+ else
+ {
+  try
+  {
+   divDisplayContent=document.createElement("DIV");
+   divDisplayContent.id="divContent";
+   document.body.appendChild(divDisplayContent);
+  }
+  catch(e)
+  {
+   return false;
+  }
+ }
+
+ DHTMLpagenation.initialize();
+ return this;
+ 
+}};
+DHTMLpagenation.initialize=function() { with (this)
+{
+ divDisplayContent.className=contentStyle!=null?contentStyle:"divContent";
+ if(contentLength<=perpageLength)
+ {
+  strDisplayContent=content;
+  divDisplayContent.innerHTML=strDisplayContent;
+  return null;
+ }
+
+ pageSizeCount=Math.ceil((contentLength/perpageLength));
+
+ DHTMLpagenation.goto(currentPage);
+ DHTMLpagenation.displayContent();
+}};
+DHTMLpagenation.displayPage=function() { with (this)
+{
+ strDisplayPagenation="分页：";
+
+ if(currentPage&&currentPage!=1)
+  strDisplayPagenation+='<a href="javascript:void(0)" onclick="DHTMLpagenation.previous()">上一页</a>&nbsp;&nbsp;';
+ else
+  strDisplayPagenation+="上一页&nbsp;&nbsp;";
+
+ for(var i=1;i<=pageSizeCount;i++)
+ {
+  if(i!=currentPage)
+   strDisplayPagenation+='<a href="javascript:void(0)" onclick="DHTMLpagenation.goto('+i+');">'+i+'</a>&nbsp;&nbsp;';
+  else
+   strDisplayPagenation+=i+"&nbsp;&nbsp;";
+ }
+
+ if(currentPage&&currentPage!=pageSizeCount)
+  strDisplayPagenation+='<a href="javascript:void(0)" onclick="DHTMLpagenation.next()">下一页</a>&nbsp;&nbsp;';
+ else
+  strDisplayPagenation+="下一页&nbsp;&nbsp;";
+
+ strDisplayPagenation+="共 " + pageSizeCount + " 页，每页" + perpageLength + " 字符，调整字符数：<input type='text' value='"+perpageLength+"' id='ctlPerpageLength'><input type='button' value='确定' onclick='DHTMLpagenation.change(document.getElementById(\"ctlPerpageLength\").value);'>";
+
+ divDisplayPagenation.innerHTML=strDisplayPagenation;
+}};
+DHTMLpagenation.previous=function() { with(this)
+{
+ DHTMLpagenation.goto(currentPage-1);
+}};
+DHTMLpagenation.next=function() { with(this)
+{
+ DHTMLpagenation.goto(currentPage+1);
+}};
+DHTMLpagenation.goto=function(iCurrentPage) { with (this)
+{
+ startime=new Date();
+ if(regularExp.test(iCurrentPage))
+ {
+  currentPage=iCurrentPage;
+  strDisplayContent=content.substr((currentPage-1)*perpageLength,perpageLength);
+ }
+ else
+ {
+  alert("page parameter error!");
+ }
+ DHTMLpagenation.displayPage();
+ DHTMLpagenation.displayContent();
+}};
+DHTMLpagenation.displayContent=function() { with (this)
+{
+ divDisplayContent.innerHTML=strDisplayContent;
+}};
+DHTMLpagenation.change=function(iPerpageLength) { with(this)
+{
+ if(regularExp.test(iPerpageLength))
+ {
+  DHTMLpagenation.perpageLength=iPerpageLength;
+  DHTMLpagenation.currentPage=1;
+  DHTMLpagenation.initialize();
+ }
+ else
+ {
+  alert("请输入数字");
+ }
+}};
+
+// method
+// DHTMLpagenation(strContent,perpageLength)
+
+DHTMLpagenation(s,100);
+
+//-->
+</SCRIPT>
+</BODY>
+</HTML>

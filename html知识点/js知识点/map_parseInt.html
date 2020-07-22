@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>map(parseInt)</title>
+</head>
+<style>
+pre{
+  font-size:16px;
+}
+</style>
+<body>
+  <h3>['1', '2', '3'].map(parseInt) what & why ?</h3>
+  <pre>
+      ['10','10','10','10','10'].map(parseInt);
+
+      parseInt(string, radix)
+
+      string	 必需。要被解析的字符串。
+      radix	   可选。表示要解析的数字的基数。该值介于 2 ~ 36 之间。
+
+               如果省略该参数或其值为 0，则数字将以 10 为基础来解析。如果它以 “0x” 或 “0X” 开头，将以 16 为基数。
+
+               如果该参数小于 2 或者大于 36，则 parseInt() 将返回 NaN。
+      
+
+      ['1', '2', '3'].map((item, index) => {
+          return parseInt(item, index)
+      })
+
+      parseInt('1', 0) // 1
+      parseInt('2', 1) // NaN
+      parseInt('3', 2) // NaN, 3 不是二进制
+
+      parseInt(100); // 100
+      parseInt(100, 10); // 100
+      parseInt(100, 2); // 4 -> converts 100 in base 2 to base 10
+  </pre>
+</body>
+</html>
+<script>
+    let mapArr=['10','10','10','10','10'].map(parseInt)
+    console.log(mapArr)
+    let mapArr1=['1', '2', '3'].map((item, index) => {
+          return parseInt(item, index)
+      })
+    console.log(mapArr1)
+</script>

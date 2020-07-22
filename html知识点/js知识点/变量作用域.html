@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>变量作用域</title>
+</head>
+<body>
+   <pre>
+      var b = 10;
+      (function b() {
+        b = 20;
+        console.log(b)
+      })()
+
+      1.函数表达式与函数声明不同，函数名只在该函数内部有效，并且此绑定是常量绑定。
+
+      2.对于一个常量进行赋值，在 strict 模式下会报错，非 strict 模式下静默失败。
+
+      3.IIFE中的函数是函数表达式，而不是函数声明。
+   </pre>
+   <h3>非匿名自执行函数，函数名只读</h3>
+   <h2>
+      在JavaScript的立即执行的具名函数A内修改A的值时到底发生了什么？
+   </h2>
+   <pre>
+      (function A() {
+          console.log(A); // [Function A]
+          A = 1;
+          console.log(window.A); // undefined
+          console.log(A); // [Function A]
+      }())
+
+      可以看到注释里的输出。
+      这也就是说A = 1这一步什么都没有发生。它既没有改变A的值，也没有在window中添加新的属性。
+
+      (function A() {
+        console.log(A); // undefined
+        var A = 1;
+        console.log(window.A); // undefined
+        console.log(A); // 1
+    }())
+
+    这个还是很好理解的，var语句被hoist到函数顶端，函数内定义了变量A但是没有赋值，所以第一个log是undefined，因为有var，并没有向global添加属性，因此window.A也是undefined。
+
+    function A() {
+        console.log(A); // [Function A]
+        A = 1;
+        console.log(window.A); // 1
+        console.log(A); // 1
+    }
+    A();
+
+    不在立即执行这个函数，结果也很符合直觉，打第一个log时，函数作用域内没有找到A，因此向上层查找，找到函数A；然后A = 1使得window对象多了一个属性，第二个log结果是1，第三个log显然也是1。
+   </pre>
+</body>
+</html>
+<script>
+var b = 10;
+(function b(){
+    b = 20;
+    console.log(b); 
+})();
+
+var a = 10;
+(function a() {
+   // 内部作用域，会先去查找是有已有变量b的声明，有就直接赋值20，确实有了呀。发现了具名函数 function b(){}，拿此b做赋值；
+   // IIFE的函数无法进行赋值（内部机制，类似const定义的常量），所以无效。
+  // （这里说的“内部机制”，想搞清楚，需要去查阅一些资料，弄明白IIFE在JS引擎的工作方式，堆栈存储IIFE的方式等）
+    a = 20;
+    console.log(a); // [Function a]
+    console.log(window.a); // 10，不是20
+})();
+
+var b = 10;
+(function b() {
+    window.b = 20; 
+    console.log(b); // [Function b]
+    console.log(window.b); // 20是必然的
+})();
+
+var b = 10;
+(function b() {
+    var b = 20; // IIFE内部变量
+    console.log(b); // 20
+   console.log(window.b); // 10 
+})();
+</script>

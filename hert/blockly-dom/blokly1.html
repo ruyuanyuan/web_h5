@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>blockly</title>
+  <script src="./blockly/blockly_compressed.js"></script>
+  <script src="./blockly/msg/en.js"></script>
+  <script src="./blockly/javascript_compressed.js"></script>
+  <script src="./blockly/python_compressed.js"></script>
+  <script src='./blockly/blocks/custom_generator_js.js'></script>
+  <script src='./blockly/blocks/custom_generator_python.js'></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body onselectstart="return false;">
+  <header>京东云教育</header>
+  <div class='content'>
+    <div class='phaser-box'>
+      <img src="./img/phaser.png" alt="">
+    </div>
+    <div class='block-box'>
+      <div class='block-header'>
+        <div class='blocks-title'>块</div>
+        <span class='block-line'></span>
+        <div class='blocks-controller'>
+          <div class='workspace'>工作区间</div>
+          <div class='controller-btns'>
+            <span class='btn-item' id='runCoder'><img src="./img/run.png" alt="">运行</span>
+            <span class='btn-item' id='resetCoder'><img src="./img/reset.png" alt="">重置</span>
+            <span class='btn-item' id='numCoder'><img src="./img/number.png" alt="">块数</span>
+            <span class='btn-item' id='jsCoder'><img src="./img/code.png" alt="">JS代码</span>
+            <span class='btn-item' id='pyCoder'><img src="./img/code.png" alt="">Python代码</span>
+          </div>
+        </div>
+      </div>
+      <div class='block-content'>
+        <xml id="toolbox" style="display: none" width='200px'>
+          <block type="move_up" web-class='move_up_class'></block>
+          <block type="move_up" web-class='move_up_class'></block>
+        </xml>
+        <div id='blocklyDiv'></div>
+      </div>
+    </div>
+  </div>
+  <footer>《我的世界》教育版由微软开发，中国大陆版权归属京东集团独家所有，由京东云管理运营</footer>
+</body>
+</html>
+<script src='./blockly/blocks/custom_blocks.js'></script>
+<script src='./js/controller.js'></script>

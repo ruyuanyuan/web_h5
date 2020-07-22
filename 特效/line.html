@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+<title>炫酷动态立体线条粒子背景js动画</title>
+<meta name="keywords" content="炫酷,动态,立体,线条粒子,背景,js动画" />
+<meta name="description" content="炫酷动态立体线条粒子背景js动画代码下载。js代码(www.jsdaima.com)" />
+</head>
+<style>
+  *{
+    padding:0;
+    margin:0;
+    list-style: none;
+  }
+  html,body{
+    height:100%;
+    overflow: hidden;
+  }
+</style>
+<body>
+<script src="three.min.js"></script>
+<canvas id="myCanvas"></canvas>
+<script>
+
+window.addEventListener('load', init);
+
+function init() {
+
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    let rot = 0;
+    let mousex = 0;
+
+    const renderer = new THREE.WebGLRenderer({
+        canvas: document.querySelector('#myCanvas'),
+        antialias: true
+    });
+    renderer.setSize(width, height);
+
+
+    const scene = new THREE.Scene({});
+    scene.background = new THREE.Color(0x000000);
+
+
+    const camera = new THREE.PerspectiveCamera(45, width / height);
+
+
+    const lines = new THREE.Group();
+    const line_material = new THREE.LineBasicMaterial({
+        color: 0x7799ff
+    });
+    for (let i = 0; i < 20; i++) {
+        var line_geometry = new THREE.Geometry();
+        line_geometry.vertices.push(
+            new THREE.Vector3(0, 0, 0),
+            new THREE.Vector3(Math.random() * 400 - 200, Math.random() * 400 - 200, Math.random() * 400 - 200),
+            new THREE.Vector3(Math.random() * 400 - 200, Math.random() * 400 - 200, Math.random() * 400 - 200),
+            new THREE.Vector3(Math.random() * 400 - 200, Math.random() * 400 - 200, Math.random() * 400 - 200),
+            new THREE.Vector3(Math.random() * 800 - 400, Math.random() * 400 - 200, Math.random() * 800 - 400),
+            new THREE.Vector3(Math.random() * 800 - 400, Math.random() * 400 - 200, Math.random() * 800 - 400),
+            new THREE.Vector3(Math.random() * 400 - 200, Math.random() * 4000 - 200, Math.random() * 400 - 200)
+        );
+        var newline = new THREE.Line(line_geometry, line_material);
+        lines.add(newline);
+    }
+    scene.add(lines);
+
+    document.addEventListener('mousemove', (event) => {
+        mousex = (event.pageX - 500) / 5000;
+    })
+
+    tick();
+    function tick() {
+        rot += 0.05 + mousex; 
+        const radian = (rot * Math.PI) / 180;
+        const radian2 = ((rot + 15) * Math.PI) / 180;
+        lines.position.x = 50 * Math.sin(radian2);
+        lines.position.z = 50 * Math.cos(radian2);
+        camera.position.x = 200 * Math.sin(radian);
+        camera.position.z = 200 * Math.cos(radian);
+        camera.lookAt(new THREE.Vector3(0, 10, 0));
+        renderer.render(scene, camera);
+        requestAnimationFrame(tick);
+    }
+}</script>
+
+</body>
+</html>

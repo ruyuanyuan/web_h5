@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ES5/ES6 的继承区别</title>
+  <style>
+    p{
+      font-size:16px;
+    }
+  </style>
+</head>
+<body>
+  <h3>ES5/ES6 的继承除了写法以外还有什么区别？</h3>
+  <h4>继承是指一个对象直接使用另一对象的属性和方法。</h4>
+   <p>
+    ES5的继承是通过prototype或构造函数机制来实现。ES5的继承实质上是先创建子类的实例对象，然后再将父类的方法添加到this上(Parent.apply(this))。
+    
+   </p>
+   <p>
+    ES6的继承机制实质上是先创建父类的实例对象this(所以必须先调用父类的super()方法)，然后再用子类的构造函数修改this。
+   </p>
+   <pre>
+    es5 :
+          function Human(name){
+            this.name = name
+          }
+          Human.prototype.run = function(){
+            console.log(this.name+'跑步 ing')
+            return undefined
+          }
+          function Man(name){
+            Human.call(this,name)
+            this.gender = '男'
+          }
+          
+          var f = function(){}
+          f.prototype = Human.prototype
+          Man.prototype = new f()
+          
+          Man.prototype.fight = function(){
+            console.log('打架 ing')
+          }
+
+    es6 : 
+          class Human{
+            constructor(name){
+              this.name = name
+            }
+            run(){
+              console.log(this.name+'跑步 ing')
+              return undefined
+            }
+          }
+          class Man extend Human{
+            constructor(name){
+              super(name)
+              this.gender = '男'
+            }
+            fight(){
+              console.log('打架 ing')
+            }
+          }
+   </pre>
+  <h4>优劣对比：</h4>
+  <h3>ES5 继承的写法，从原型链的角度来看更易于理解，但写法上比 ES6 的继承稍有复杂。</h3>
+</body>
+</html>

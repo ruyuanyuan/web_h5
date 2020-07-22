@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://studio.code.org/s/aquatic/stage/1/puzzle/1 -->
+<html dir="ltr" class="details"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="react-tooltip">.__react_component_tooltip{border-radius:3px;display:inline-block;font-size:13px;left:-999em;opacity:0;padding:8px 21px;position:fixed;pointer-events:none;transition:opacity 0.3s ease-out;top:-999em;visibility:hidden;z-index:999}.__react_component_tooltip.allow_hover{pointer-events:auto}.__react_component_tooltip:before,.__react_component_tooltip:after{content:"";width:0;height:0;position:absolute}.__react_component_tooltip.show{opacity:0.9;margin-top:0px;margin-left:0px;visibility:visible}.__react_component_tooltip.type-dark{color:#fff;background-color:#222}.__react_component_tooltip.type-dark.place-top:after{border-top-color:#222;border-top-style:solid;border-top-width:6px}.__react_component_tooltip.type-dark.place-bottom:after{border-bottom-color:#222;border-bottom-style:solid;border-bottom-width:6px}.__react_component_tooltip.type-dark.place-left:after{border-left-color:#222;border-left-style:solid;border-left-width:6px}.__react_component_tooltip.type-dark.place-right:after{border-right-color:#222;border-right-style:solid;border-right-width:6px}.__react_component_tooltip.type-dark.border{border:1px solid #fff}.__react_component_tooltip.type-dark.border.place-top:before{border-top:8px solid #fff}.__react_component_tooltip.type-dark.border.place-bottom:before{border-bottom:8px solid #fff}.__react_component_tooltip.type-dark.border.place-left:before{border-left:8px solid #fff}.__react_component_tooltip.type-dark.border.place-right:before{border-right:8px solid #fff}.__react_component_tooltip.type-success{color:#fff;background-color:#8DC572}.__react_component_tooltip.type-success.place-top:after{border-top-color:#8DC572;border-top-style:solid;border-top-width:6px}.__react_component_tooltip.type-success.place-bottom:after{border-bottom-color:#8DC572;border-bottom-style:solid;border-bottom-width:6px}.__react_component_tooltip.type-success.place-left:after{border-left-color:#8DC572;border-left-style:solid;border-left-width:6px}.__react_component_tooltip.type-success.place-right:after{border-right-color:#8DC572;border-right-style:solid;border-right-width:6px}.__react_component_tooltip.type-success.border{border:1px solid #fff}.__react_component_tooltip.type-success.border.place-top:before{border-top:8px solid #fff}.__react_component_tooltip.type-success.border.place-bottom:before{border-bottom:8px solid #fff}.__react_component_tooltip.type-success.border.place-left:before{border-left:8px solid #fff}.__react_component_tooltip.type-success.border.place-right:before{border-right:8px solid #fff}.__react_component_tooltip.type-warning{color:#fff;background-color:#F0AD4E}.__react_component_tooltip.type-warning.place-top:after{border-top-color:#F0AD4E;border-top-style:solid;border-top-width:6px}.__react_component_tooltip.type-warning.place-bottom:after{border-bottom-color:#F0AD4E;border-bottom-style:solid;border-bottom-width:6px}.__react_component_tooltip.type-warning.place-left:after{border-left-color:#F0AD4E;border-left-style:solid;border-left-width:6px}.__react_component_tooltip.type-warning.place-right:after{border-right-color:#F0AD4E;border-right-style:solid;border-right-width:6px}.__react_component_tooltip.type-warning.border{border:1px solid #fff}.__react_component_tooltip.type-warning.border.place-top:before{border-top:8px solid #fff}.__react_component_tooltip.type-warning.border.place-bottom:before{border-bottom:8px solid #fff}.__react_component_tooltip.type-warning.border.place-left:before{border-left:8px solid #fff}.__react_component_tooltip.type-warning.border.place-right:before{border-right:8px solid #fff}.__react_component_tooltip.type-error{color:#fff;background-color:#BE6464}.__react_component_tooltip.type-error.place-top:after{border-top-color:#BE6464;border-top-style:solid;border-top-width:6px}.__react_component_tooltip.type-error.place-bottom:after{border-bottom-color:#BE6464;border-bottom-style:solid;border-bottom-width:6px}.__react_component_tooltip.type-error.place-left:after{border-left-color:#BE6464;border-left-style:solid;border-left-width:6px}.__react_component_tooltip.type-error.place-right:after{border-right-color:#BE6464;border-right-style:solid;border-right-width:6px}.__react_component_tooltip.type-error.border{border:1px solid #fff}.__react_component_tooltip.type-error.border.place-top:before{border-top:8px solid #fff}.__react_component_tooltip.type-error.border.place-bottom:before{border-bottom:8px solid #fff}.__react_component_tooltip.type-error.border.place-left:before{border-left:8px solid #fff}.__react_component_tooltip.type-error.border.place-right:before{border-right:8px solid #fff}.__react_component_tooltip.type-info{color:#fff;background-color:#337AB7}.__react_component_tooltip.type-info.place-top:after{border-top-color:#337AB7;border-top-style:solid;border-top-width:6px}.__react_component_tooltip.type-info.place-bottom:after{border-bottom-color:#337AB7;border-bottom-style:solid;border-bottom-width:6px}.__react_component_tooltip.type-info.place-left:after{border-left-color:#337AB7;border-left-style:solid;border-left-width:6px}.__react_component_tooltip.type-info.place-right:after{border-right-color:#337AB7;border-right-style:solid;border-right-width:6px}.__react_component_tooltip.type-info.border{border:1px solid #fff}.__react_component_tooltip.type-info.border.place-top:before{border-top:8px solid #fff}.__react_component_tooltip.type-info.border.place-bottom:before{border-bottom:8px solid #fff}.__react_component_tooltip.type-info.border.place-left:before{border-left:8px solid #fff}.__react_component_tooltip.type-info.border.place-right:before{border-right:8px solid #fff}.__react_component_tooltip.type-light{color:#222;background-color:#fff}.__react_component_tooltip.type-light.place-top:after{border-top-color:#fff;border-top-style:solid;border-top-width:6px}.__react_component_tooltip.type-light.place-bottom:after{border-bottom-color:#fff;border-bottom-style:solid;border-bottom-width:6px}.__react_component_tooltip.type-light.place-left:after{border-left-color:#fff;border-left-style:solid;border-left-width:6px}.__react_component_tooltip.type-light.place-right:after{border-right-color:#fff;border-right-style:solid;border-right-width:6px}.__react_component_tooltip.type-light.border{border:1px solid #222}.__react_component_tooltip.type-light.border.place-top:before{border-top:8px solid #222}.__react_component_tooltip.type-light.border.place-bottom:before{border-bottom:8px solid #222}.__react_component_tooltip.type-light.border.place-left:before{border-left:8px solid #222}.__react_component_tooltip.type-light.border.place-right:before{border-right:8px solid #222}.__react_component_tooltip.place-top{margin-top:-10px}.__react_component_tooltip.place-top:before{border-left:10px solid transparent;border-right:10px solid transparent;bottom:-8px;left:50%;margin-left:-10px}.__react_component_tooltip.place-top:after{border-left:8px solid transparent;border-right:8px solid transparent;bottom:-6px;left:50%;margin-left:-8px}.__react_component_tooltip.place-bottom{margin-top:10px}.__react_component_tooltip.place-bottom:before{border-left:10px solid transparent;border-right:10px solid transparent;top:-8px;left:50%;margin-left:-10px}.__react_component_tooltip.place-bottom:after{border-left:8px solid transparent;border-right:8px solid transparent;top:-6px;left:50%;margin-left:-8px}.__react_component_tooltip.place-left{margin-left:-10px}.__react_component_tooltip.place-left:before{border-top:6px solid transparent;border-bottom:6px solid transparent;right:-8px;top:50%;margin-top:-5px}.__react_component_tooltip.place-left:after{border-top:5px solid transparent;border-bottom:5px solid transparent;right:-6px;top:50%;margin-top:-4px}.__react_component_tooltip.place-right{margin-left:10px}.__react_component_tooltip.place-right:before{border-top:6px solid transparent;border-bottom:6px solid transparent;left:-8px;top:50%;margin-top:-5px}.__react_component_tooltip.place-right:after{border-top:5px solid transparent;border-bottom:5px solid transparent;left:-6px;top:50%;margin-top:-4px}.__react_component_tooltip .multi-line{display:block;padding:2px 0px;text-align:center}</style><script type="text/javascript" src="./Code.org - 《我的世界》：水上航行_files/10f957f1ae"></script><script src="./Code.org - 《我的世界》：水上航行_files/nr-spa-1130.min.js.下载"></script><script type="text/javascript" async="" src="./Code.org - 《我的世界》：水上航行_files/geo2.js.下载"></script>
+
+<title>Code.org - 《我的世界》：水上航行</title>
+
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-TZZBRK5"></script><script async="" src="./Code.org - 《我的世界》：水上航行_files/analytics.js.下载"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"10f957f1ae","applicationID":"3787364","transactionName":"IV8LTUAOWVwER0lDUhBZFU1tDVBGBFkVH0IKXxI=","queueTime":0,"applicationTime":42,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UQYGVVBQGwAHXFZRAQU="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(23),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{l?l-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(24),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError",l=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),c.xhrWrappable&&t(14),d=!0)}s.on("fn-start",function(t,e,n){d&&(l+=1)}),s.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){j++,L=y.hash,this[u]=x.now()}function o(){j--,y.hash!==L&&i(0,!0);var t=x.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=x.now()})}var s="-start",c="-end",f="-body",u="fn"+s,d="fn"+c,p="cb"+s,l="cb"+c,h="jsTime",m="fetch",v="addEventListener",w=window,y=w.location,x=t("loader");if(w[v]&&x.xhrWrappable){var g=t(10),b=t(11),E=t(8),R=t(6),O=t(13),C=t(7),P=t(14),T=t(9),N=t("ee"),S=N.get("tracer");t(16),x.features.spa=!0;var L,j=0;N.on(u,r),N.on(p,r),N.on(d,o),N.on(l,o),N.buffer([u,d,"xhr-done","xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+c,"clearTimeout"+s,u]),P.buffer([u,"new-xhr","send-xhr"+s]),C.buffer([m+s,m+"-done",m+f+s,m+f+c]),E.buffer(["newURL"]),g.buffer([u]),b.buffer(["propagate",p,l,"executor-err","resolve"+s]),S.buffer([u,"no-"+u]),T.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(P,"send-xhr"+s),a(N,"xhr-resolved"),a(N,"xhr-done"),a(C,m+s),a(C,m+"-done"),a(T,"new-jsonp"),a(T,"jsonp-end"),a(T,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,j>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),s=t(12),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",l="-start",h="-end",m="fn"+l,v="fn"+h,w="bstTimer",y="pushState",x=t("loader");x.features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=x.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,x.now()])}),a.on(m,function(t,e,n){this.bstStart=x.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,x.now(),this.bstType])}),s.on(m,function(){this.bstStart=x.now()}),s.on(v,function(t,e){i(w,[e,this.bstStart,x.now(),"requestAnimationFrame"])}),o.on(y+l,function(t){this.time=x.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(26)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(23);e.exports=o;var a=window,s="fetch-",c=s+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,d=a.Response,p=a.fetch,l="prototype";u&&d&&p&&(i(f,function(t,e){r(u[l],e,c),r(d[l],e,c)}),r(a,"fetch",s),o.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(s+"done",[null,e],n)}else o.emit(s+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(26)(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){c.emit("jsonp-error",[],p),c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=s(a),d="function"==typeof u.parent[u.key];if(d){var p={};f.inPlace(u.parent,[u.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),c.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function s(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var c=t("ee").get("jsonp"),f=t(26)(c);if(e.exports=c,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,l=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?f.inPlace(Node.prototype,l,"dom-"):(f.inPlace(HTMLElement.prototype,l,"dom-"),f.inPlace(HTMLHeadElement.prototype,l,"dom-"),f.inPlace(HTMLBodyElement.prototype,l,"dom-")),c.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t(26)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=s(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(26),a=t("ee").get("promise"),s=i(a),c=t(23),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;c(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),s=f.resolve(i);return s}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),c(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=s(t[0],"resolve-",this),t[1]=s(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),s.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=s(t[0],"cb-",this),t[1]=s(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t(26)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(26)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){x.push(t),h&&(b?b.then(a):v?v(a):(E=-E,R.data=E))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t(26)(u),p=NREUM.o,l=p.XHR,h=p.MO,m=p.PR,v=p.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var g=window.XMLHttpRequest=function(t){var e=new l(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(l,g),g.prototype=l.prototype,d.inPlace(g.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(){var t=window.NREUM,e=t.info.accountID||null,n=t.info.agentID||null,r=t.info.trustKey||null,i="btoa"in window&&"function"==typeof window.btoa;if(!e||!n||!i)return null;var a={v:[0,1],d:{ty:"Browser",ac:e,ap:n,id:o.generateCatId(),tr:o.generateCatId(),ti:Date.now()}};return r&&e!==r&&(a.d.tk=r),btoa(JSON.stringify(a))}var o=t(21);e.exports={generateTraceHeader:r}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(p[r],this.listener,!1);e.aborted||(n.duration=s.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):a(this,t),n.cbTime=this.cbTime,d.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return v(r)}function i(t,e){var n=f(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}function a(t,e){t.params.status=e.status;var n=o(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(17),u=t(15).generateTraceHeader,d=t("ee"),p=["load","error","abort","timeout"],l=p.length,h=t("id"),m=t(20),v=t(19),w=window.XMLHttpRequest;s.features.xhr=!0,t(14),d.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){a(e,t)},!1),m&&(m>34||m<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),d.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),d.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=!1;if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=!!NREUM.init.distributed_tracing.enabled),n&&this.sameOrigin){var r=u();r&&e.setRequestHeader("newrelic",r)}}),d.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=v(r);i&&(n.txSize=i)}this.startTime=s.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{d.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<l;a++)e.addEventListener(p[a],this.listener,!1)}),d.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),d.on("xhr-load-added",function(t,e){var n=""+h(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),d.on("xhr-load-removed",function(t,e){var n=""+h(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),d.on("addEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&d.emit("xhr-load-added",[t[1],t[2]],e)}),d.on("removeEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&d.emit("xhr-load-removed",[t[1],t[2]],e)}),d.on("fn-start",function(t,e,n){e instanceof w&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=s.now()))}),d.on("fn-end",function(t,e){this.xhrCbStart&&d.emit("xhr-cb-time",[s.now()-this.xhrCbStart,this.onload,e],e)})}},{}],17:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],18:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(23),s=t(24),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],19:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],20:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],21:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(e=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}e.exports={generateUuid:r,generateCatId:o}},{}],22:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],23:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],24:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],25:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],26:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(24),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],s])}u(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],s),d}finally{u(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<e.length;c++)s=e[c],a=t[s],r(a)||(t[s]=n(a,f?s+o:o,i,s))}function u(n,r,o){if(!c||e){var i=c;c=!0;try{t.emit(n,r,o,e)}catch(a){p([a,n,r,o])}c=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function n(n,r,o,i){if(!p.aborted||i){t&&t(n,r,o);for(var a=e(o),s=m(n),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[x[n]];return d&&d.push([g,n,r,a]),a}}function l(t,e){y[t]=m(t).concat(e)}function h(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return y[t]||[]}function v(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",x[n]=e,e in u||(u[e]=[])})}var y={},x={},g={on:l,addEventListener:l,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var s="nr@context",c=t("gos"),f=t(23),u={},d={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=b.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()+b.offset],null,"api");var n=l.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return R.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(23),u=t("ee"),d=t(22),p=window,l=p.document,h="addEventListener",m="attachEvent",v=p.XMLHttpRequest,w=v&&v.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:v,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var y=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1130.min.js"},g=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),b=e.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:g,userAgent:d};t(18),l[h]?(l[h]("DOMContentLoaded",i,!1),p[h]("load",r,!1)):(l[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,R=t(25)},{}]},{},["loader",2,16,5,3,4]);</script>
+<meta name="viewport" content="width=1280, minimal-ui, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densityDpi=device-dpi, user-scalable=no">
+<!--[if IE 9]>
+<meta content='IE=Edge' http-equiv='X-UA-Compatible'>
+<![endif]-->
+<link rel="stylesheet" media="all" href="./Code.org - 《我的世界》：水上航行_files/code-studio-bf8125f7cf322c38c2c18f302d5fcf68c4ba7c2c8a6735fabac3824a38587997.css">
+<link rel="stylesheet" media="all" href="./Code.org - 《我的世界》：水上航行_files/application-aa38a4f4ef8dbebdf465f368a3e11f1472c5716618f66a12110fab11e557df4e.css">
+<script>
+  // Google Analytics snippet (https://developers.google.com/analytics/devguides/collection/analyticsjs/)
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-37745279-1', 'auto', {"cookieDomain":"auto"});
+  
+  var dimensions = {"dimension5":"production"};
+  if ('devicePixelRatio' in window) {
+    dimensions["dimension6"] = window.devicePixelRatio.toString();
+  }
+  
+  ga('set', dimensions);
+  ga('set', 'anonymizeIp', true);
+  
+  ga('send', 'pageview');
+  
+  function trackEvent(category, action, label, value) {
+    ga('send', 'event', category, action, label, value);
+  }
+  
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TZZBRK5');
+</script>
+
+<!-- / webpack-runtime.js must appear exactly once on any page containing webpack entries -->
+<script src="./Code.org - 《我的世界》：水上航行_files/webpack-runtimewp46c381c6bfdc895b1809.min.js.下载"></script>
+<!-- / essential.js is ordered above application.js to filter new relic errors -->
+<script src="./Code.org - 《我的世界》：水上航行_files/essentialwp08d9412e20124d305b1d.min.js.下载"></script>
+<script src="./Code.org - 《我的世界》：水上航行_files/vendorswp0e93b54c8f6e2dd4b3e0.min.js.下载"></script>
+
+<script src="./Code.org - 《我的世界》：水上航行_files/application-912e89b6e376b99f2ff5449303396cbe88c17d7c392c075c77d2368388b309bb.js.下载"></script>
+<script src="./Code.org - 《我的世界》：水上航行_files/common_localewp8a585b36ce28a04f3abca0c29465d0ae.js.下载"></script>
+<script src="./Code.org - 《我的世界》：水上航行_files/12977480133.js.下载"></script>
+<script src="./Code.org - 《我的世界》：水上航行_files/code-studio-commonwp0519db756e3f15a11c15.min.js.下载"></script>
+
+
+<meta name="viewport" content="initial-scale=1">
+<meta property="fb:app_id" content="500177453358606">
+<meta property="og:site_name" content="Code.org">
+<meta property="og:type" content="article">
+<meta property="article:publisher" content="https://www.facebook.com/Code.org">
+<meta name="twitter:site" content="@codeorg">
+<meta name="twitter:card" content="photo">
+<meta property="og:title" content="看看我做的">
+<meta property="og:description" content="我用 Code.org 自己写的代码">
+<meta property="og:url" content="https://studio.code.org/s/aquatic/stage/1/puzzle/1">
+<meta property="og:image" content="https://studio.code.org/assets/craft_sharing_drawing-0c44b72723ec99761f50eb399e489c6cb071d9367079161ef9e48cfa8cefb50b.png">
+<meta property="og:image:secure_url" content="https://studio.code.org/assets/craft_sharing_drawing-0c44b72723ec99761f50eb399e489c6cb071d9367079161ef9e48cfa8cefb50b.png">
+<meta property="og:image:width" content="400">
+<meta property="og:image:height" content="400">
+<meta name="twitter:title" content="看看我做的">
+<meta name="twitter:description" content="我用 Code.org 自己写的代码">
+<meta name="twitter:url" content="https://studio.code.org/s/aquatic/stage/1/puzzle/1">
+<meta name="twitter:image" content="https://studio.code.org/assets/craft_sharing_drawing-0c44b72723ec99761f50eb399e489c6cb071d9367079161ef9e48cfa8cefb50b.png">
+<meta name="twitter:image:secure_url" content="https://studio.code.org/assets/craft_sharing_drawing-0c44b72723ec99761f50eb399e489c6cb071d9367079161ef9e48cfa8cefb50b.png">
+<meta name="twitter:image:width" content="400">
+<meta name="twitter:image:height" content="400">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="https://studio.code.org/assets/logo_noalpha-d3b71ea5c10427be241d5a90c786d24397823ae7625146c535a7cbc31f4606d4.png">
+
+<script>
+  window.dashboard = window.dashboard || {};
+  (function () {
+    // subset of the string table used in JS. not this only supports strings
+    // that don't use params
+    var strs = {
+      less: "更少",
+      more: "更多",
+      submit: "提交",
+      stage: "阶段",
+      view_lesson_plan: "查看课程计划",
+      activerecord: {
+        attributes: {
+          user: {
+            email: "电子邮件",
+            age: "年龄",
+          }
+        }
+      },
+      footer: {
+        built_on_code_studio: "在代码工作室中建立",
+        report_abuse: "举报滥用",
+        try_hour_of_code: "试试《编程一小时》！",
+        how_it_works: "它是如何工作的（查看代码）",
+        copyright: "版权",
+        tos: "使用条款",
+        privacy: "隐私政策"
+      },
+      errors: {
+        messages: {
+          too_young: "此内容有年龄限制，不适合低龄的学生。",
+        }
+      },
+      project: {
+        share_title: "分享您的项目",
+        share_copy_link: "复制链接：",
+        share_embed_description: "您可以将嵌入的代码粘贴到HTML页，就可以在一个网页上显示这个项目。",
+        share_u13_warning: "在分享之前问问你的老师。只和你学校里的其他人分享。",
+        embed: "嵌入",
+        advanced_share: "显示更高级的选项",
+        new: "新建",
+        edit_project: "编辑工程",
+        sharing_disabled: "抱歉，这个项目不能分享。如果这是你或者你学生的项目，请<a href=\'https://studio.code.org/users/sign_in\'>登录<\/a>到你的账号查看这个项目。",
+        abuse: {
+          tos: "此工程因违反了 Code.org 的<a href=\'http://code.org/tos\'>服务条款<\/a> ，不能被共享。",
+          policy_violation: "这个项目包含了不能和他人分享的数据。请联系应用程序的主人以修复他们的应用内容。",
+          contact_us: "如果你认为有错误，请<a href=\'https://code.org/contact\'>联系我们<\/a>。",
+          go_to_code_studio: "转到代码工作室",
+          report_abuse_form: {
+            intro: "如果你遇到了冒犯性的内容、威胁、网络欺凌、骚扰或通过代码工作室编写的应用程序实例侵犯了你的版权，请填写下面的表格。我们将非常认真对待你的报告，据此调查并采取适当的行动。",
+            validation: {
+              email: "请提供一个电子邮件地址",
+              age: "请指定年龄",
+              abuse_type: "请回答此内容如何违反服务条款",
+              abuse_detail: "请提供有关您所报告的内容的详细信息",
+            },
+            abusive_url: "内容的地址将被提交",
+            abuse_type: {
+              question: "此内容是如何违反%{link_start}服务条款%{link_end}的?",
+              harassment: "威胁，网络欺凌不法之徒",
+              offensive: "冒犯性的内容",
+              infringement: "著作权侵权",
+              other: "其他",
+            },
+            detail: "请提供尽可能详细的信息，尽可能关于您所报告的内容。",
+            acknowledge: "通过提交此信息，你承认它将会被根据%{link_start_privacy}隐藏策略%{link_end}和%{link_start_tos}服务条款%{link_end}的规定进行处理。",
+          }
+        }
+      },
+    };
+  
+    window.dashboard.i18n = {
+      /**
+       * Mimics dashboard's I18n.t, getting a string from the hierarchy
+       * @param {string} selector Selector the desired string, i.e. "project.abuse.tos"
+       * @param {object} params Set of key/value pairs where instances of %{key} in the
+       *   string are replaced with value
+       */
+      t: function (selector, params) {
+        var hierarchy = selector.split('.');
+        var current = strs;
+        hierarchy.forEach(function(item) {
+          current = current[item];
+          if (!current) {
+            throw new Error('i18n failed to find string: ' + selector);
+          }
+        });
+        if (typeof(current) !== 'string') {
+          throw new Error('i18n not a leaf: ' + selector);
+        }
+  
+        // Do param replacement
+        Object.keys(params || {}).forEach(function (key) {
+          current = current.replace(new RegExp('%{' + key + '}', 'g'), params[key]);
+        });
+        return current;
+      }
+    };
+  })();
+</script>
+
+<style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }
+body /shadow-deep/ [touch-action="none"]{ -ms-touch-action: none; touch-action: none; }
+[touch-action="auto"]{ -ms-touch-action: auto; touch-action: auto; }
+body /shadow-deep/ [touch-action="auto"]{ -ms-touch-action: auto; touch-action: auto; }
+[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }
+body /shadow-deep/ [touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }
+[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }
+body /shadow-deep/ [touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }
+[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
+body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
+</style><style type="text/css">/*
+Basis for this CSS from:
+https://weblog.west-wind.com/posts/2015/Feb/26/Using-FontAwesome-Fonts-for-HTML-Radio-Buttons-and-Checkboxes
+*/
+
+input[type=radio].with-font {
+    border: 0;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+input[type=radio].with-font ~ label:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\F1DB";  /* fa-circle-thin */
+    font-size: 18px;
+    color: color.black;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    vertical-align: bottom;
+}
+input[type=radio].with-font:checked ~ label:before  {
+    font-family: FontAwesome;
+    display:inline-block;
+    content: "\F058";  /* fa-check-circle */
+    font-size: 18px;
+    color: #0094ca;
+    width: 15px;
+    height: 15px;
+    line-height: 16px;
+    background-color: white;
+    text-align: center;
+    border-radius: 60%;
+}
+
+label.hidden-label-checked-radio-button {
+    margin: 0px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+}</style><style type="text/css">.blocklyFieldAngleTextInput {
+  border: 1px solid #ccc;
+  margin-top: -10px;
+}
+.blocklyFieldAngleDropdown {
+  box-shadow: 4px 4px 6px #bbb;
+  border-style: solid;
+  border-width: 1px;
+}
+.blocklyFieldAngleDropdown > div {
+  float: left;
+}
+.blocklyFieldAngleDropdown .goog-menu {
+  box-shadow: none;
+  border-style: none;
+}
+.blocklyFieldAngleDropdown .goog-menu::after {
+  content: '';
+  border-left: 1px solid #949ca2;
+  position: absolute;
+  height: 80%;
+  right: 0;
+  top: 10%;
+}
+.blocklyLimit rect {
+ fill: #a69bc1;
+}
+.blocklyLimit.overLimit rect {
+ fill: #daa53a;
+}
+.blocklyLimit .blocklyText {
+ font-size: 10pt;
+ fill: #fff;
+}
+.blocklyUnused .blocklyLimit rect {
+ fill: #c6cacd;
+}
+.blocklyUnused .blocklyLimit .blocklyText {
+ fill: #5b6770
+}
+.blocklyUnused .blocklyPath, .blocklyUnused .blocklyPathDark, .blocklyUnused .blocklyPathLight, .blocklyUnused .blocklyEditableText {
+ opacity: 0.25;
+}
+.blocklyUnused .blocklyUnusedFrame {
+ transition: opacity 2s;
+ opacity: 0.8;
+}
+.blocklyUnused .blocklyUnusedFrame .blocklyText {
+ fill: #000;
+}
+.blocklyUnused .blocklyUnusedFrame.hidden {
+ opacity: 0;
+ visibility: hidden
+}
+.blocklyUnused .blocklyHelp {
+ cursor: pointer;
+}
+.blocklyUnused .blocklyHelp .blocklyText {
+ fill: #fff;
+ font-size: 10pt;
+ text-anchor: middle;
+ dominant-baseline: central;
+}
+.blocklyDraggable {
+  cursor: url(/blockly/media/handopen.cur) 8 5, auto;
+}
+.dragging, .dragging .blocklySvg, .dragging .blocklyDraggable {
+  cursor: url(/blockly/media/handclosed.cur) 7 3, auto !important;
+}
+#codeWorkspace {
+  border: 1px solid #ddd;
+}
+#codeWorkspace .userHidden {
+  display: none;
+}
+#codeWorkspace .hiddenFlyout, #blocklyDragCanvas .hiddenFlyout {
+  display: none !important;
+}
+#codeWorkspace.edit .userHidden {
+  display: inline;
+  fill-opacity: 0.5;
+}
+#codeWorkspace.edit .userHidden .blocklyPath {
+  fill-opacity: 0.5;
+}
+#codeWorkspace.edit .userHidden .blocklyPathDark, #codeWorkspace.edit .userHidden .blocklyPathLight {
+  display: none;
+}
+.blocklySvg {
+  cursor: pointer;
+  background-color: #fff;
+  overflow: hidden;
+}
+.blocklySvg.inline {
+  vertical-align: top;
+}
+g.blocklyDraggable {
+  -ms-touch-action: none;
+  touch-action: none;
+}
+.blocklyWidgetDiv {
+  position: absolute;
+  display: none;
+  z-index: 999;
+}
+.blocklyResizeSE {
+  fill: #aaa;
+  cursor: se-resize;
+}
+.blocklyResizeSW {
+  fill: #aaa;
+  cursor: sw-resize;
+}
+.blocklyResizeLine {
+  stroke-width: 1;
+  stroke: #888;
+}
+.blocklyHighlightedConnectionPath {
+  stroke-width: 4px;
+  stroke: #fc3;
+  fill: none;
+}
+.blocklyPathLight {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+.blocklyTypeHint {
+  fill: none;
+  stroke-width: 5;
+}
+.blocklySelected>.blocklyTypeHint, .blocklyUnused .blocklyTypeHint {
+  display: none;
+}
+.blocklySpotlight>.blocklyPath {
+  fill: #fc3;
+}
+.blocklySelected>.blocklyPath {
+  stroke-width: 3px;
+  stroke: #fc3;
+}
+.blocklySelected>.blocklyPathLight {
+  display: none;
+}
+.blocklyUndeletable>.blocklyEditableText>rect {
+  fill-opacity: 1.0;
+  fill: #ffdb74;
+}
+#blocklyDragCanvas {
+  display: none;
+  pointer-events: none;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border: 1px solid #fff;
+  z-index: 10;
+}
+#blocklyDragCanvas.isDragging {
+  display: block;
+}
+.blocklyDragging>.blocklyPath,
+.blocklyDragging>.blocklyPathLight {
+  fill-opacity: 0.8;
+  stroke-opacity: 0.8;
+}
+.blocklyDragging>.blocklyPathDark {
+  display: none;
+}
+.blocklyDisabled>.blocklyPath {
+  fill-opacity: 0.50;
+  stroke-opacity: 0.50;
+}
+.blocklyDisabled>.blocklyPathLight,
+.blocklyDisabled>.blocklyPathDark {
+  display: none;
+}
+.blocklyText {
+  cursor: default;
+  font-family: sans-serif;
+  font-size: 11pt;
+  fill: #fff;
+}
+.innerModalDiv {
+  pointer-events: none !important;
+}
+.innerModalDiv .goog-flat-menu-button,
+.innerModalDiv textarea,
+.innerModalDiv input,
+.innerModalDiv button {
+  pointer-events: auto;
+}
+.flyoutColorGray {
+  background-color: #DDD;
+}
+.contractEditor #paramAddButton {
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+.contractEditorHeaderText {
+  cursor: default;
+  font-size: 12pt;
+  fill: #fff;
+}
+.contract-type-hint {
+  color: #898989;
+  font-size: 11px;
+}
+.exampleAreaDiv {
+  pointer-events: none;
+}
+.callResultText {
+  color: #000;
+  position: absolute;
+}
+.exampleAreaButton {
+  pointer-events: initial;
+  position: absolute;
+}
+.core-clearfix {
+  overflow: auto;
+}
+.testButton {
+  padding: 3px 0 !important;
+  min-width: 95px !important;
+}
+.resetButton {
+  border: 1px solid #0094ca !important;
+  background-color: #0094ca !important;
+}
+.example-result-text {
+  position: absolute;
+  font-size: 16px;
+}
+.color-square-icon {
+  float: left;
+  width: 21px;
+  height: 18px;
+  margin-right: 9px !important;
+  margin-left: 6px !important;
+}
+.goog-menuitem .color-square-icon {
+  margin-left: -3px !important;
+  margin-top: 2px !important;
+}
+.blocklyNonEditableText>text {
+  pointer-events: none;
+}
+.blocklyNonEditableText>rect,
+.blocklyEditableText>rect {
+  fill: #fff;
+  fill-opacity: 0.6;
+}
+.blocklyNonEditableText>text,
+.blocklyEditableText>text {
+  fill: #000;
+}
+.blocklyEditableText:hover>rect {
+  stroke-width: 2;
+  stroke: #fff;
+}
+/*
+ * Don't allow users to select text.  It gets annoying when trying to
+ * drag a block and selected text moves instead.
+ */
+.blocklySvg text {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: inherit;
+}
+.blocklyHidden {
+  display: none;
+}
+.blocklyFieldDropdown:not(.blocklyHidden) {
+  display: block;
+}
+.blocklyTooltipBackground {
+  fill: #ffffc7;
+  stroke-width: 1px;
+  stroke: #d8d8d8;
+}
+.blocklyTooltipShadow,
+.blocklyContextMenuShadow,
+.blocklyDropdownMenuShadow {
+  fill: #bbb;
+  filter: url(#blocklyShadowFilter);
+}
+.blocklyTooltipText {
+  font-family: sans-serif;
+  font-size: 9pt;
+  fill: #000;
+}
+#modalEditorClose:hover>rect {
+  fill: #0094ca;
+}
+.svgTextButton:hover>rect {
+  fill: #0094ca;
+}
+.red-delete-button {
+  background-color: #cc0000 !important;
+  border: 1px solid #cc0000 !important;
+}
+.blocklyIconShield {
+  cursor: default;
+  fill: #00c;
+  stroke-width: 1px;
+  stroke: #ccc;
+}
+.blocklyIconGroup:hover>.blocklyIconShield {
+  fill: #00f;
+  stroke: #fff;
+}
+.blocklyIconGroup:hover>.blocklyIconMark {
+  fill: #fff;
+}
+.blocklyIconMark {
+  cursor: default !important;
+  font-family: sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  fill: #ccc;
+  text-anchor: middle;
+}
+.blocklyWarningBody {
+}
+.blocklyMinimalBody {
+  margin: 0;
+  padding: 0;
+}
+.blocklyHtmlInput {
+  font-family: sans-serif;
+  font-size: 11pt;
+  border: none;
+  outline: none;
+  width: 100%;
+  -moz-appearance: textfield;
+}
+.blocklyHtmlInput::-webkit-inner-spin-button, .blocklyHtmlInput::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.blocklyContextMenuBackground,
+.blocklyMutatorBackground {
+  fill: #fff;
+  stroke-width: 1;
+  stroke: #ddd;
+}
+.newFunctionDiv {
+  position: absolute;
+  top: 120px;
+  left: 600px;
+}
+#modalContainer .goog-flat-menu-button-caption {
+  color: #555555;
+  margin-left: 1px;
+  margin-right: 0;
+  min-width: 55px;
+}
+.blocklyContextMenuOptions>.blocklyMenuDiv,
+.blocklyContextMenuOptions>.blocklyMenuDivDisabled,
+.blocklyDropdownMenuOptions>.blocklyMenuDiv {
+  fill: #fff;
+}
+.blocklyContextMenuOptions>.blocklyMenuDiv:hover>rect,
+.blocklyDropdownMenuOptions>.blocklyMenuDiv:hover>rect {
+  fill: #57e;
+}
+.blocklyMenuSelected>rect {
+  fill: #57e;
+}
+.blocklyMenuText {
+  cursor: default !important;
+  font-family: sans-serif;
+  font-size: 15px; /* All context menu sizes are based on pixels. */
+  fill: #000;
+}
+.blocklyContextMenuOptions>.blocklyMenuDiv:hover>.blocklyMenuText,
+.blocklyDropdownMenuOptions>.blocklyMenuDiv:hover>.blocklyMenuText {
+  fill: #fff;
+}
+.blocklyMenuSelected>.blocklyMenuText {
+  fill: #fff;
+}
+.blocklyMenuDivDisabled>.blocklyMenuText {
+  fill: #ccc;
+}
+.blocklyFlyoutBackground {
+  fill: #ddd;
+  fill-opacity: 0.8;
+}
+.blocklyToolboxBackground {
+  fill: #ddd;
+}
+.blocklyBackground {
+  fill: #666;
+}
+.blocklyScrollbarBackground {
+  fill: #fff;
+  stroke-width: 1;
+  stroke: #e4e4e4;
+}
+.blocklyScrollbarKnob {
+  fill: #ccc;
+}
+.blocklyScrollbarBackground:hover+.blocklyScrollbarKnob,
+.blocklyScrollbarKnob:hover {
+  fill: #bbb;
+}
+.blocklyInvalidInput {
+  background: #faa;
+}
+.blocklyAngleCircle {
+  stroke: #444;
+  stroke-width: 1;
+  fill: #ddd;
+  fill-opacity: 0.8;
+}
+.blocklyAngleMarks {
+  stroke: #444;
+  stroke-width: 1;
+}
+.blocklyAngleGuage {
+  fill: #d00;
+  fill-opacity: 0.8;  
+}
+.blocklyContextMenu {
+  border-radius: 4px;
+}
+.blocklyDropdownMenu {
+  padding: 0 !important;
+  position: relative !important;
+}
+.blocklyRectangularDropdownMenu .goog-menuitem {
+  height: 100%;
+  padding: 0 !important;
+  border-radius: 5px;
+  margin-bottom: 4px !important;
+}
+.fieldRectangularDropdownBackdrop {
+  fill: #fff;
+  fill-opacity: 0.6;
+}
+.blocklyRectangularDropdownArrow {
+  fill: #7965a1;
+  font-size: 20px !important;
+}
+.blocklyRectangularDropdownMenu .goog-menuitem-highlight, .goog-menuitem-hover {
+  border-color: #7965a1 !important;
+  border-style: dotted !important;
+  border-width: 0px !important;
+  margin: -4px -4px 0 !important;
+  border-width: 4px !important;
+  border-style: solid !important;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+}
+.colored-type-dropdown .goog-menuitem-content {
+  color: #555555;
+  float: left;
+}
+.colored-type-dropdown > .goog-menuitem {
+  padding: 0px 40px 2px 13px;
+}
+.goog-menu {
+  box-shadow: 4px 4px 6px #bbb;
+  border-width: 2px;
+}
+.goog-menuitem {
+  height: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.goog-menuitem-highlight,
+.goog-menuitem-hover {
+  border-width: 0;
+  background-color: #57e;
+}
+.goog-menuitem-highlight .goog-menuitem-content {
+  color: #fff;
+}
+.goog-option-selected .goog-menuitem-checkbox:before {
+  content: "✓";
+}
+.goog-menuitem-checkbox {
+  background: ""
+}
+.blocklyRectangularDropdownMenu img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.blocklyRectangularDropdownMenu {
+  border-radius: 5px;
+  box-shadow: none !important;
+}
+.goog-option-selected .goog-menuitem-checkbox,
+.goog-option-selected .goog-menuitem-icon {
+}
+/* Category tree in Toolbox. */
+.blocklyToolboxDiv {
+  display: none;
+  overflow-x: visible;
+  overflow-y: auto;
+  position: absolute;
+}
+.blocklyTreeRoot {
+  padding: 4px 0;
+}
+.blocklyTreeRoot:focus {
+  outline: none;
+}
+.blocklyTreeRow {
+  line-height: 22px;
+  height: 22px;
+  padding-right: 1em;
+  white-space: nowrap;
+}
+.blocklyToolboxDiv[dir="RTL"] .blocklyTreeRow {
+  padding-right: 0;
+  padding-left: 1em !important;
+}
+.blocklyTreeRow:hover {
+  background-color: #e4e4e4;
+}
+.blocklyTreeIcon {
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+  background-image: url(/blockly/media/tree.png);
+}
+.blocklyTreeIconClosedLtr {
+  background-position: -32px -1px;
+}
+.blocklyTreeIconClosedRtl {
+  background-position: 0px -1px;
+}
+.blocklyTreeIconOpen {
+  background-position: -16px -1px;
+}
+.blocklyTreeIconNone {
+  background-position: -48px -1px;
+}
+.blocklyTreeSelected>.blocklyTreeIconClosedLtr {
+  background-position: -32px -17px;
+}
+.blocklyTreeSelected>.blocklyTreeIconClosedRtl {
+  background-position: 0px -17px;
+}
+.blocklyTreeSelected>.blocklyTreeIconOpen {
+  background-position: -16px -17px;
+}
+.blocklyTreeSelected>.blocklyTreeIconNone {
+  background-position: -48px -17px;
+}
+.blocklyTreeLabel {
+  cursor: default;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 0 3px;
+  vertical-align: middle;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.blocklyTreeSelected {
+  background-color: #57e !important;
+}
+.blocklyTreeSelected .blocklyTreeLabel {
+  color: #fff;
+}
+.blocklyArrow {
+  font-size: 80%;
+}
+.paramToolbox {
+  padding: 0 0 5px 0;
+  pointer-events: auto;
+}
+.paramToolbox input, .paramToolbox textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  resize: none;
+}
+.paramToolbox input, .paramToolbox button {
+  height: 30px;
+  margin: 0;
+}
+.paramToolbox div {
+  margin: 4px 10px;
+}
+#modalContainer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+#modalContainer > svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  pointer-events: none;
+}
+#modalContainer > svg * {
+  pointer-events: visiblePainted;
+}
+/*
+ * Copyright 2007 The Closure Library Authors. All Rights Reserved.
+ *
+ * Use of this source code is governed by the Apache License, Version 2.0.
+ * See the COPYING file for details.
+ */
+/* Author: pupius@google.com (Daniel Pupius) */
+/*
+ Styles to make the colorpicker look like the old gmail color picker
+ NOTE: without CSS scoping this will override styles defined in palette.css
+*/
+.goog-palette {
+  outline: none;
+  cursor: default;
+}
+.goog-palette-table {
+  border: 1px solid #666;
+  border-collapse: collapse;
+}
+.goog-palette-cell {
+  height: 25px;
+  width: 25px;
+  margin: 0;
+  border: 0;
+  text-align: center;
+  vertical-align: middle;
+  border-right: 1px solid #666;
+  font-size: 1px;
+}
+.goog-palette-colorswatch {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  border: 1px solid #666;
+}
+.goog-palette-cell-hover .goog-palette-colorswatch {
+  border: 1px solid #FFF;
+}
+.goog-palette-cell-selected .goog-palette-colorswatch {
+  border: 1px solid #000;
+  color: #fff;
+}
+.goog-menu {
+  background: #fff;
+  border-color: #ccc #666 #666 #ccc;
+  border-style: solid;
+  border-width: 1px;
+  cursor: default;
+  font: normal 13px Arial, sans-serif;
+  margin: 0;
+  outline: none;
+  padding: 4px 0;
+  position: absolute;
+  z-index: 20000;
+}
+.goog-menuitem {
+  color: #000;
+  font: normal 13px Arial, sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 4px 7em 4px 28px;
+  white-space: nowrap;
+}
+.goog-menuitem.goog-menuitem-rtl {
+  padding-left: 7em;
+  padding-right: 28px;
+}
+.goog-menu-nocheckbox .goog-menuitem,
+.goog-menu-noicon .goog-menuitem {
+  padding-left: 12px;
+}
+.goog-menu-noaccel .goog-menuitem:not(.goog-menuitem-rtl) {
+  padding-right: 20px;
+}
+.goog-menu-noaccel .goog-menuitem.goog-menuitem-rtl {
+  padding-left: 20px;
+}
+.goog-menuitem-content {
+  color: #000;
+  font-size: 15px;
+}
+.goog-menuitem-disabled .goog-menuitem-accel,
+.goog-menuitem-disabled .goog-menuitem-content {
+  color: #ccc !important;
+}
+.goog-menuitem-disabled .goog-menuitem-icon {
+  opacity: 0.3;
+  -moz-opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+.goog-menuitem-highlight,
+.goog-menuitem-hover {
+  background-color: #d6e9f8;
+  border-color: #d6e9f8;
+  border-style: dotted;
+  border-width: 1px 0;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+.goog-menuitem-checkbox,
+.goog-menuitem-icon {
+  background-repeat: no-repeat;
+  height: 16px;
+  left: 6px;
+  position: absolute;
+  right: auto;
+  vertical-align: middle;
+  width: 16px;
+}
+.goog-menuitem-rtl .goog-menuitem-checkbox,
+.goog-menuitem-rtl .goog-menuitem-icon {
+  left: auto;
+  right: 6px;
+}
+.goog-option-selected .goog-menuitem-checkbox,
+.goog-option-selected .goog-menuitem-icon {
+}
+.goog-menuitem-accel {
+  color: #999;
+  direction: ltr;
+  left: auto;
+  padding: 0 6px;
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+.goog-menuitem-rtl .goog-menuitem-accel {
+  left: 0;
+  right: auto;
+  text-align: left;
+}
+.goog-menuitem-mnemonic-hint {
+  text-decoration: underline;
+}
+.goog-menuitem-mnemonic-separator {
+  color: #999;
+  font-size: 12px;
+  padding-left: 4px;
+}
+.goog-menuseparator {
+  border-top: 1px solid #ccc;
+  margin: 4px 0;
+  padding: 0;
+}
+.goog-flat-menu-button {
+  background-color: #fff;
+  border: 1px solid #c9c9c9;
+  color: #333;
+  cursor: pointer;
+  font: normal 95%;
+  list-style: none;
+  margin: 0 2px;
+  outline: none;
+  padding: 1px 4px;
+  position: relative;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.goog-flat-menu-button-disabled * {
+  border-color: #ccc;
+  color: #999;
+  cursor: default;
+}
+.goog-flat-menu-button-hover {
+  border-color: #9cf #69e #69e #7af !important; /* Hover border wins. */
+}
+.goog-flat-menu-button-active {
+  background-color: #bbb;
+  background-position: bottom left;
+}
+.goog-flat-menu-button-focused {
+  border-color: #bbb;
+}
+.goog-flat-menu-button-caption {
+  padding-right: 10px;
+  vertical-align: top;
+}
+.goog-flat-menu-button-dropdown {
+  /* Client apps may override the URL at which they serve the sprite. */
+  background: url(https://ssl.gstatic.com/editor/editortoolbar.png) no-repeat -388px 0;
+  position: absolute;
+  right: 2px;
+  top: 0;
+  vertical-align: top;
+  width: 7px;
+}
+.goog-inline-block {
+  position: relative;
+  display: -moz-inline-box; /* Ignored by FF3 and later. */
+  display: inline-block;
+}
+</style></head>
+<body class=" minecraft pin_bottom" style="overflow: hidden;">
+<div id="gdpr-dialog"></div>
+<script data-gdpr="{}" data-usertype="null" src="./Code.org - 《我的世界》：水上航行_files/code-studiowp33a6e8291f667eef3720.min.js.下载"></script>
+<div class="wrapper">
+
+<div id="warning-banner" style="display: none">
+<i class="fa fa-warning warning-sign banner-icon" id="warning-icon" style="display: none"></i>
+&nbsp;
+<div class="banner-text" id="unsupported-browser" style="display: none">
+<p>您的浏览器不支持浏览本网页。请升级您的浏览器至&lt;a href='https://support.code.org/hc/en-us/articles/202591743', target='_blank'&gt;我们支持的浏览器&lt;/a&gt;。您可以尝试访问此网页，但有可能会遇到功能问题。</p>
+</div>
+<div class="banner-text" id="applab-unsupported-tablet" style="display: none">应用实验室的最佳体验是在有键盘、鼠标的桌面或笔记本电脑。您可能会在当前设备上遇到一些问题。</div>
+<div class="banner-text" id="gamelab-unsupported-tablet" style="display: none">游戏实验室的最佳体验是在有键盘、鼠标的桌面或笔记本电脑。您可能会在当前设备上遇到一些问题。</div>
+<div class="banner-text" id="weblab-unsupported-browser" style="display: none">很遗憾，在当前浏览器中加载网络实验室时遇到一些问题。您也许可以先试试另一个浏览器，直到我们解决了这个问题。很抱歉造成您的不便。</div>
+<div class="banner-text" id="weblab-unsupported-local-storage" style="display: none">在私密浏览模式下使用 Web Lab 可能会遇到问题。请在正常模式下重新加载您的项目。很抱歉给您带来的不便。</div>
+<i class="fa fa-close close-button banner-icon" id="dismiss-icon" onclick="$(&quot;#warning-banner&quot;).slideUp();" style="display: none; cursor: pointer"></i>
+</div>
+
+<link href="./Code.org - 《我的世界》：水上航行_files/hamburger.css" rel="stylesheet">
+<div class="header-wrapper feedback-bug-links hide_on_mobile">
+<div class="navbar-static-top header">
+<div class="container" style="width: 880px;">
+<div class="navbar-header">
+<div class="row header_row">
+<div class="header_left">
+<div class="header_logo">
+<a id="logo_home_link" href="https://code.org/"><img src="./Code.org - 《我的世界》：水上航行_files/logo-e35a5eef0b045951a89a579ee21cd3bcf967cec01aada45fc2584614da18feeb.png" alt="Logo"></a>
+</div>
+<div class="project_info"><!-- react-empty: 1 --></div>
+</div>
+<div class="header_middle">
+<div class="header_level">
+<div class="header_level_container">
+<div class="script_name_container"><a data-reactroot="" href="https://studio.code.org/s/aquatic" class="header_text">《我的世界》：水上航行</a></div>
+<div class="progress_container"><div data-reactroot="" class="react_stage" style="display: flex; flex-direction: row; align-items: center; padding-left: 5px; padding-right: 5px; background-color: rgb(231, 232, 234); border: 1px solid rgb(198, 202, 205); border-radius: 5px; height: 40px; margin-left: 4px; margin-right: 4px;"><div><a href="http://studio.code.org/s/aquatic/stage/1/puzzle/1" class="uitest-ProgressBubble" data-radium="true" style="text-decoration: none;"><div data-radium="true" style="width: 38px; display: flex; justify-content: center;"><div data-tip="true" data-for="661" aria-describedby="661" data-radium="true" currentitem="false"><div class="uitest-bubble" data-radium="true" style="box-sizing: content-box; font-family: &quot;Gotham 5r&quot;, sans-serif; width: 30px; height: 30px; border-radius: 30px; border-style: solid; border-color: rgb(14, 190, 14); font-size: 16px; letter-spacing: -0.11px; display: flex; align-items: center; justify-content: center; transition: background-color 0.2s ease-out 0s, border-color 0.2s ease-out 0s, color 0.2s ease-out 0s; margin-top: 3px; margin-bottom: 3px; position: relative; border-width: 2px; color: rgb(255, 255, 255); background-color: rgb(14, 190, 14);"><div data-radium="true" style="font-size: 16px; white-space: nowrap; line-height: 16px;"><span>1</span></div></div><span class="__react_component_tooltip place-top type-dark " id="661" role="tooltip" data-id="tooltip"><div style="line-height: 30px;"><i class="fa fa-desktop " style="padding-right: 5px; padding-left: 5px;"></i><!-- react-text: 12 -->1. <!-- /react-text --></div></span></div></div></a></div><div><a href="http://studio.code.org/s/aquatic/stage/1/puzzle/2" class="uitest-ProgressBubble" data-radium="true" style="text-decoration: none;"><div data-radium="true" style="width: 17px; display: flex; justify-content: center;"><div data-tip="true" data-for="662" aria-describedby="662" data-radium="true" currentitem="false"><div class="uitest-bubble" data-radium="true" style="box-sizing: content-box; font-family: &quot;Gotham 5r&quot;, sans-serif; width: 9px; height: 9px; border-radius: 9px; border-style: solid; border-color: rgb(198, 202, 205); font-size: 0px; letter-spacing: -0.11px; display: flex; align-items: center; justify-content: center; transition: background-color 0.2s ease-out 0s, border-color 0.2s ease-out 0s, color 0.2s ease-out 0s; margin-top: 3px; margin-bottom: 3px; position: relative; border-width: 2px; color: rgb(91, 103, 112); background-color: rgb(254, 254, 254);"><div data-radium="true" style="font-size: 16px; white-space: nowrap; line-height: 16px;"><span></span></div></div><span class="__react_component_tooltip place-top type-dark " id="662" role="tooltip" data-id="tooltip"><div style="line-height: 30px;"><i class="fa fa-desktop " style="padding-right: 5px; padding-left: 5px;"></i><!-- react-text: 23 -->2. <!-- /react-text --></div></span></div></div></a></div><div><a href="http://studio.code.org/s/aquatic/stage/1/puzzle/3" class="uitest-ProgressBubble" data-radium="true" style="text-decoration: none;"><div data-radium="true" style="width: 17px; display: flex; justify-content: center;"><div data-tip="true" data-for="663" aria-describedby="663" data-radium="true" currentitem="false"><div class="uitest-bubble" data-radium="true" style="box-sizing: content-box; font-family: &quot;Gotham 5r&quot;, sans-serif; width: 9px; height: 9px; border-radius: 9px; border-style: solid; border-color: rgb(198, 202, 205); font-size: 0px; letter-spacing: -0.11px; display: flex; align-items: center; justify-content: center; transition: background-color 0.2s ease-out 0s, border-color 0.2s ease-out 0s, color 0.2s ease-out 0s; margin-top: 3px; margin-bottom: 3px; position: relative; border-width: 2px; color: rgb(91, 103, 112); background-color: rgb(254, 254, 254);"><div data-radium="true" style="font-size: 16px; white-space: nowrap; line-height: 16px;"><span></span></div></div><span class="__react_component_tooltip place-top type-dark " id="663" role="tooltip" data-id="tooltip"><div style="line-height: 30px;"><i class="fa fa-desktop " style="padding-right: 5px; padding-left: 5px;"></i><!-- react-text: 34 -->3. <!-- /react-text --></div></span></div></div></a></div><div><a href="http://studio.code.org/s/aquatic/stage/1/puzzle/4" class="uitest-ProgressBubble" data-radium="true" style="text-decoration: none;"><div data-radium="true" style="width: 17px; display: flex; justify-content: center;"><div data-tip="true" data-for="664" aria-describedby="664" data-radium="true" currentitem="false"><div class="uitest-bubble" data-radium="true" style="box-sizing: content-box; font-family: &quot;Gotham 5r&quot;, sans-serif; width: 9px; height: 9px; border-radius: 9px; border-style: solid; border-color: rgb(198, 202, 205); font-size: 0px; letter-spacing: -0.11px; display: flex; align-items: center; justify-content: center; transition: background-color 0.2s ease-out 0s, border-color 0.2s ease-out 0s, color 0.2s ease-out 0s; margin-top: 3px; margin-bottom: 3px; position: relative; border-width: 2px; color: rgb(91, 103, 112); background-color: rgb(254, 254, 254);"><div data-radium="true" style="font-size: 16px; white-space: nowrap; line-height: 16px;"><span></span></div></div><span class="__react_component_tooltip place-top type-dark " id="664" role="tooltip" data-id="tooltip"><div style="line-height: 30px;"><i class="fa fa-desktop " style="padding-right: 5px; padding-left: 5px;"></i><!-- react-text: 45 -->4. <!-- /react-text --></div></span></div></div></a></div><div><a href="http://studio.code.org/s/aquatic/stage/1/puzzle/5" class="uitest-ProgressBubble" data-radium="true" style="text-decoration: none;"><div data-radium="true" style="width: 17px; display: flex; justify-content: center;"><div data-tip="true" data-for="665" aria-describedby="665" data-radium="true" currentitem="false"><div class="uitest-bubble" data-radium="true" style="box-sizing: content-box; font-family: &quot;Gotham 5r&quot;, sans-serif; width: 9px; height: 9px; border-radius: 9px; border-style: solid; border-color: rgb(198, 202, 205); font-size: 0px; letter-spacing: -0.11px; display: flex; align-items: center; justify-content: center; transition: background-color 0.2s ease-out 0s, border-color 0.2s ease-out 0s, color 0.2s ease-out 0s; margin-top: 3px; margin-bottom: 3px; position: relative; border-width: 2px; color: rgb(91, 103, 112); background-color: rgb(254, 254, 254);"><div data-radium="true" style="font-size: 16px; white-space: nowrap; line-height: 16px;"><span></span></div></div><span class="__react_component_tooltip place-top type-dark " id="665" role="tooltip" data-id="tooltip"><div style="line-height: 30px;"><i class="fa fa-desktop " style="padding-right: 5px; padding-left: 5px;"></i><!-- react-text: 56 -->5. <!-- /react-text --></div></span></div></div></a></div><div><a href="http://studio.code.org/s/aquatic/stage/1/puzzle/6" class="uitest-ProgressBubble" data-radium="true" style="text-decoration: none;"><div data-radium="true" style="width: 17px; display: flex; justify-content: center;"><div data-tip="true" data-for="666" aria-describedby="666" data-radium="true" currentitem="false"><div class="uitest-bubble" data-radium="true" style="box-sizing: content-box; font-family: &quot;Gotham 5r&quot;, sans-serif; width: 9px; height: 9px; border-radius: 9px; border-style: solid; border-color: rgb(198, 202, 205); font-size: 0px; letter-spacing: -0.11px; display: flex; align-items: center; justify-content: center; transition: background-color 0.2s ease-out 0s, border-color 0.2s ease-out 0s, color 0.2s ease-out 0s; margin-top: 3px; margin-bottom: 3px; position: relative; border-width: 2px; color: rgb(91, 103, 112); background-color: rgb(254, 254, 254);"><div data-radium="true" style="font-size: 16px; white-space: nowrap; line-height: 16px;"><span></span></div></div><span class="__react_component_tooltip place-bottom type-dark " id="666" role="tooltip" data-id="tooltip" style="left: 315px; top: 34px;"><div style="line-height: 30px;"><i class="fa fa-desktop " style="padding-right: 5px; padding-left: 5px;"></i><!-- react-text: 67 -->6. <!-- /react-text --></div></span></div></div></a></div><div><a href="http://studio.code.org/s/aquatic/stage/1/puzzle/7" class="uitest-ProgressBubble" data-radium="true" style="text-decoration: none;"><div data-radium="true" style="width: 17px; display: flex; justify-content: center;"><div data-tip="true" data-for="667" aria-describedby="667" data-radium="true" currentitem="false"><div class="uitest-bubble" data-radium="true" style="box-sizing: content-box; font-family: &quot;Gotham 5r&quot;, sans-serif; width: 9px; height: 9px; border-radius: 9px; border-style: solid; border-color: rgb(198, 202, 205); font-size: 0px; letter-spacing: -0.11px; display: flex; align-items: center; justify-content: center; transition: background-color 0.2s ease-out 0s, border-color 0.2s ease-out 0s, color 0.2s ease-out 0s; margin-top: 3px; margin-bottom: 3px; position: relative; border-width: 2px; color: rgb(91, 103, 112); background-color: rgb(254, 254, 254);"><div data-radium="true" style="font-size: 16px; white-space: nowrap; line-height: 16px;"><span></span></div></div><span class="__react_component_tooltip place-top type-dark " id="667" role="tooltip" data-id="tooltip"><div style="line-height: 30px;"><i class="fa fa-desktop " style="padding-right: 5px; padding-left: 5px;"></i><!-- react-text: 78 -->7. <!-- /react-text --></div></span></div></div></a></div><div><a href="http://studio.code.org/s/aquatic/stage/1/puzzle/8" class="uitest-ProgressBubble" data-radium="true" style="text-decoration: none;"><div data-radium="true" style="width: 17px; display: flex; justify-content: center;"><div data-tip="true" data-for="668" aria-describedby="668" data-radium="true" currentitem="false"><div class="uitest-bubble" data-radium="true" style="box-sizing: content-box; font-family: &quot;Gotham 5r&quot;, sans-serif; width: 9px; height: 9px; border-radius: 9px; border-style: solid; border-color: rgb(198, 202, 205); font-size: 0px; letter-spacing: -0.11px; display: flex; align-items: center; justify-content: center; transition: background-color 0.2s ease-out 0s, border-color 0.2s ease-out 0s, color 0.2s ease-out 0s; margin-top: 3px; margin-bottom: 3px; position: relative; border-width: 2px; color: rgb(91, 103, 112); background-color: rgb(254, 254, 254);"><div data-radium="true" style="font-size: 16px; white-space: nowrap; line-height: 16px;"><span></span></div></div><span class="__react_component_tooltip place-top type-dark " id="668" role="tooltip" data-id="tooltip"><div style="line-height: 30px;"><i class="fa fa-desktop " style="padding-right: 5px; padding-left: 5px;"></i><!-- react-text: 89 -->8. <!-- /react-text --></div></span></div></div></a></div><div><a href="http://studio.code.org/s/aquatic/stage/1/puzzle/9" class="uitest-ProgressBubble" data-radium="true" style="text-decoration: none;"><div data-radium="true" style="width: 17px; display: flex; justify-content: center;"><div data-tip="true" data-for="669" aria-describedby="669" data-radium="true" currentitem="false"><div class="uitest-bubble" data-radium="true" style="box-sizing: content-box; font-family: &quot;Gotham 5r&quot;, sans-serif; width: 9px; height: 9px; border-radius: 9px; border-style: solid; border-color: rgb(198, 202, 205); font-size: 0px; letter-spacing: -0.11px; display: flex; align-items: center; justify-content: center; transition: background-color 0.2s ease-out 0s, border-color 0.2s ease-out 0s, color 0.2s ease-out 0s; margin-top: 3px; margin-bottom: 3px; position: relative; border-width: 2px; color: rgb(91, 103, 112); background-color: rgb(254, 254, 254);"><div data-radium="true" style="font-size: 16px; white-space: nowrap; line-height: 16px;"><span></span></div></div><span class="__react_component_tooltip place-top type-dark " id="669" role="tooltip" data-id="tooltip"><div style="line-height: 30px;"><i class="fa fa-desktop " style="padding-right: 5px; padding-left: 5px;"></i><!-- react-text: 100 -->9. <!-- /react-text --></div></span></div></div></a></div><div><a href="http://studio.code.org/s/aquatic/stage/1/puzzle/10" class="uitest-ProgressBubble" data-radium="true" style="text-decoration: none;"><div data-radium="true" style="width: 17px; display: flex; justify-content: center;"><div data-tip="true" data-for="670" aria-describedby="670" data-radium="true" currentitem="false"><div class="uitest-bubble" data-radium="true" style="box-sizing: content-box; font-family: &quot;Gotham 5r&quot;, sans-serif; width: 9px; height: 9px; border-radius: 9px; border-style: solid; border-color: rgb(198, 202, 205); font-size: 0px; letter-spacing: -0.11px; display: flex; align-items: center; justify-content: center; transition: background-color 0.2s ease-out 0s, border-color 0.2s ease-out 0s, color 0.2s ease-out 0s; margin-top: 3px; margin-bottom: 3px; position: relative; border-width: 2px; color: rgb(91, 103, 112); background-color: rgb(254, 254, 254);"><div data-radium="true" style="font-size: 16px; white-space: nowrap; line-height: 16px;"><span></span></div></div><span class="__react_component_tooltip place-top type-dark " id="670" role="tooltip" data-id="tooltip"><div style="line-height: 30px;"><i class="fa fa-desktop " style="padding-right: 5px; padding-left: 5px;"></i><!-- react-text: 111 -->10. <!-- /react-text --></div></span></div></div></a></div><div><a href="http://studio.code.org/s/aquatic/stage/1/puzzle/11" class="uitest-ProgressBubble" data-radium="true" style="text-decoration: none;"><div data-radium="true" style="width: 17px; display: flex; justify-content: center;"><div data-tip="true" data-for="671" aria-describedby="671" data-radium="true" currentitem="false"><div class="uitest-bubble" data-radium="true" style="box-sizing: content-box; font-family: &quot;Gotham 5r&quot;, sans-serif; width: 9px; height: 9px; border-radius: 9px; border-style: solid; border-color: rgb(198, 202, 205); font-size: 0px; letter-spacing: -0.11px; display: flex; align-items: center; justify-content: center; transition: background-color 0.2s ease-out 0s, border-color 0.2s ease-out 0s, color 0.2s ease-out 0s; margin-top: 3px; margin-bottom: 3px; position: relative; border-width: 2px; color: rgb(91, 103, 112); background-color: rgb(254, 254, 254);"><div data-radium="true" style="font-size: 16px; white-space: nowrap; line-height: 16px;"><span></span></div></div><span class="__react_component_tooltip place-top type-dark " id="671" role="tooltip" data-id="tooltip"><div style="line-height: 30px;"><i class="fa fa-desktop " style="padding-right: 5px; padding-left: 5px;"></i><!-- react-text: 122 -->11. <!-- /react-text --></div></span></div></div></a></div><div><a href="http://studio.code.org/s/aquatic/stage/1/puzzle/12" class="uitest-ProgressBubble" data-radium="true" style="text-decoration: none;"><div data-radium="true" style="width: 17px; display: flex; justify-content: center;"><div data-tip="true" data-for="672" aria-describedby="672" data-radium="true" currentitem="false"><div class="uitest-bubble" data-radium="true" style="box-sizing: content-box; font-family: &quot;Gotham 5r&quot;, sans-serif; width: 9px; height: 9px; border-radius: 9px; border-style: solid; border-color: rgb(198, 202, 205); font-size: 0px; letter-spacing: -0.11px; display: flex; align-items: center; justify-content: center; transition: background-color 0.2s ease-out 0s, border-color 0.2s ease-out 0s, color 0.2s ease-out 0s; margin-top: 3px; margin-bottom: 3px; position: relative; border-width: 2px; color: rgb(91, 103, 112); background-color: rgb(254, 254, 254);"><div data-radium="true" style="font-size: 16px; white-space: nowrap; line-height: 16px;"><span></span></div></div><span class="__react_component_tooltip place-top type-dark " id="672" role="tooltip" data-id="tooltip"><div style="line-height: 30px;"><i class="fa fa-desktop " style="padding-right: 5px; padding-left: 5px;"></i><!-- react-text: 133 -->12. <!-- /react-text --></div></span></div></div></a></div><!-- react-text: 134 --><!-- /react-text --></div></div>
+<div class="header_finished_link" style=""><a href="https://code.org/api/hour/finish/aquatic">完成了！</a></div>
+<span class="header_popup_link" style="display: none;">
+<div class="header_popup_link_glyph">
+▼
+</div>
+<div class="header_popup_link_text">更多</div>
+</span>
+</div>
+</div>
+<div class="header_popup">
+<div class="header_popup_scrollable">
+<div class="header_popup_body">
+<div class="user-stats-block"></div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="header_right">
+<span id="sign_in_or_user">
+<a class="button-signin linktag" href="https://studio.code.org/users/sign_in" id="signin_button">
+<div class="header_button header_user">
+<span>登录</span>
+</div>
+</a>
+<script>
+  window.cookieEnvSuffix = '';
+  // Use function closure to avoid cluttering global namespace.
+  (function() {
+    // Ideally would use environment_specific_cookie_name, but that's not currently
+    // available to us in pegasus
+    var cookieKey = '_shortName' + window.cookieEnvSuffix;
+    // Share cookie with top-level domain.
+    var topLevelDomain = document.location.hostname.split('.').slice(-2).join('.');
+  
+    // Provide current_user.short_name to cached pages via session cookie.
+    // There is apps code that also depends on this query-selector, so if changes are made
+    // here we should be sure to also update other locations.
+    var displayNameSpan = document.querySelector('.header_button.header_user.user_menu .display_name');
+  
+    function retrieveUserShortName(element) {
+      if (element) {
+        var cookieMeta = "path=/;domain=" + topLevelDomain;
+        var cookieMatch = document.cookie.match('(^|;) ?' + cookieKey + '=([^;]*)(;|$)');
+        var storedName = cookieMatch && cookieMatch[2];
+        var dataName = element.dataset.shortname;
+        var id = element.dataset.id;
+        if (storedName && !id) {
+          element.innerHTML = element.innerHTML.replace(dataName, storedName);
+        }
+      }
+    }
+  
+    retrieveUserShortName(displayNameSpan);
+  
+    function hideUserOptions() {
+      $('.user_options').slideUp();
+      $('.user_menu_arrow_down').show();
+      $('.user_menu_arrow_up').hide();
+      $(document).off('click', hideUserOptions);
+    }
+    $(document).ready(function() {
+      $('.user_menu').click(function (e) {
+        if ($('.user_options').is(':hidden')) {
+          e.stopPropagation();
+          $('.user_options').slideDown();
+          $('.user_menu_arrow_down').hide();
+          $('.user_menu_arrow_up').show();
+          $(document).on('click', hideUserOptions);
+          hideCreateOptions()
+          $("#hamburger-icon").removeClass('active');
+          $("#help-icon").removeClass('active');
+          $('#hamburger #hamburger-contents').slideUp();
+          $('#help-button #help-contents').slideUp();
+        }
+      });
+      $('.user_options').click(function (e) {
+        e.stopPropagation(); // Clicks inside the popup shouldn't close it
+      });
+      $('.user_options a:last').click(function (e) {
+        // this partial can be on non-dashboard pages.
+        if (typeof dashboard !== 'undefined') {
+          dashboard.clientState.reset();
+        } else {
+          // Keep in sync with clientState#reset.
+          try {
+            sessionStorage.clear();
+          } catch (e) {}
+        }
+      });
+    });
+  
+    function hideCreateOptions() {
+      $('.create_options').slideUp();
+      $('.create_menu_arrow_down').show();
+      $('.create_menu_arrow_up').hide();
+      $(document).off('click', hideCreateOptions);
+    }
+    $(document).ready(function() {
+      $('.create_menu').click(function (e) {
+        if ($('.create_options').is(':hidden')) {
+          e.stopPropagation();
+          $('.create_options').slideDown();
+          $('.create_menu_arrow_down').hide();
+          $('.create_menu_arrow_up').show();
+          $(document).on('click', hideCreateOptions);
+          hideUserOptions()
+          $("#hamburger-icon").removeClass('active');
+          $("#help-icon").removeClass('active');
+          $('#hamburger #hamburger-contents').slideUp();
+          $('#help-button #help-contents').slideUp();
+        }
+      });
+      $('.create_options').click(function (e) {
+        e.stopPropagation(); // Clicks inside the popup shouldn't close it
+      });
+    });
+  
+  
+    if (typeof dashboard !== 'undefined') {
+      dashboard.pairing.init('//studio.code.org/pairing', hideUserOptions, false);
+    }
+  })();
+</script>
+
+</span>
+<div class="help_button hide-mobile" id="help-button">
+<div class="help_contents" id="help-contents" style="display: none;">
+<a class="linktag" href="https://support.code.org/hc/en-us/requests/new?&amp;description=Bug+in+Course+aquatic+Stage+1+Puzzle+1%0Ahttps%3A%2F%2Fstudio.code.org%2Fs%2Faquatic%2Fstage%2F1%2Fpuzzle%2F1%0ACached-Request%0A" id="report-bug">报告错误</a>
+<a class="linktag" href="https://support.code.org/" id="support">帮助与支持</a>
+</div>
+<i class="clicktag fa fa-question-circle help_icon hide-mobile" id="help-icon">
+<span style="pointer-events: none"></span>
+</i>
+</div>
+
+<div class="show-always" id="hamburger">
+<div class="hide-responsive-menu" id="hamburger-contents" style="">
+<div class="show-always">
+<div class="item">
+<a href="https://studio.code.org/courses" target="_self">课程分类</a>
+</div>
+</div>
+<div class="show-always">
+<div class="item">
+<a href="https://studio.code.org/projects/public" id="hamburger-signed-out-projects" target="_self">项目</a>
+</div>
+</div>
+<div class="show-always">
+<div class="item">
+<a href="https://code.org/international/about" id="header-intl-about" target="_self">关于</a>
+</div>
+</div>
+<div class="divider show-mobile" id="after-signed-out"></div>
+<div class="show-mobile">
+<div class="item">
+<a href="https://support.code.org/hc/en-us/requests/new?&amp;description=Bug+in+Course+aquatic+Stage+1+Puzzle+1%0Ahttps%3A%2F%2Fstudio.code.org%2Fs%2Faquatic%2Fstage%2F1%2Fpuzzle%2F1%0ACached-Request%0A" id="report-bug" target="_blank">报告错误</a>
+</div>
+</div>
+<div class="show-mobile">
+<div class="item">
+<a href="https://support.code.org/" id="support" target="_blank">帮助与支持</a>
+</div>
+</div>
+<div class="divider hide-always" id="after-help"></div>
+<div class="hide-always">
+<div class="item">
+<a href="https://studio.code.org/courses" id="learn" target="_self">学习</a>
+</div>
+</div>
+<div class="hide-always">
+<div class="item">
+<a href="https://code.org/promote" id="stats" target="_self">统计信息</a>
+</div>
+</div>
+<div class="hide-always">
+<div class="item">
+<a href="https://code.org/help" id="help-us" target="_self">帮助我们</a>
+</div>
+</div>
+</div>
+<div class="clicktag show-always" id="hamburger-icon">
+<span style="pointer-events: none"></span>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  //<![CDATA[
+  dashboard.header.build(
+    {"name":"aquatic","disablePostMilestone":false,"isHocScript":true,"student_detail_progress_view":false,"age_13_required":false},
+    {"script_id":353,"script_name":"aquatic","script_stages":1,"id":3868,"position":1,"relative_position":1,"name":"《我的世界》：水上航行","title":"《我的世界》：水上航行","flex_category":"内容","lockable":false,"levels":[{"ids":[14483],"activeId":14483,"position":1,"kind":"puzzle","icon":null,"is_concept_level":false,"title":1,"url":"http://studio.code.org/s/aquatic/stage/1/puzzle/1","freePlay":false,"bonus":null,"display_as_unplugged":false},{"ids":[14487],"activeId":14487,"position":2,"kind":"puzzle","icon":null,"is_concept_level":false,"title":2,"url":"http://studio.code.org/s/aquatic/stage/1/puzzle/2","freePlay":false,"bonus":null,"display_as_unplugged":false},{"ids":[14488],"activeId":14488,"position":3,"kind":"puzzle","icon":null,"is_concept_level":false,"title":3,"url":"http://studio.code.org/s/aquatic/stage/1/puzzle/3","freePlay":false,"bonus":null,"display_as_unplugged":false},{"ids":[14489],"activeId":14489,"position":4,"kind":"puzzle","icon":null,"is_concept_level":false,"title":4,"url":"http://studio.code.org/s/aquatic/stage/1/puzzle/4","freePlay":false,"bonus":null,"display_as_unplugged":false},{"ids":[14490],"activeId":14490,"position":5,"kind":"puzzle","icon":null,"is_concept_level":false,"title":5,"url":"http://studio.code.org/s/aquatic/stage/1/puzzle/5","freePlay":false,"bonus":null,"display_as_unplugged":false},{"ids":[14493],"activeId":14493,"position":6,"kind":"puzzle","icon":null,"is_concept_level":false,"title":6,"url":"http://studio.code.org/s/aquatic/stage/1/puzzle/6","freePlay":false,"bonus":null,"display_as_unplugged":false},{"ids":[14494],"activeId":14494,"position":7,"kind":"puzzle","icon":null,"is_concept_level":false,"title":7,"url":"http://studio.code.org/s/aquatic/stage/1/puzzle/7","freePlay":false,"bonus":null,"display_as_unplugged":false},{"ids":[14496],"activeId":14496,"position":8,"kind":"puzzle","icon":null,"is_concept_level":false,"title":8,"url":"http://studio.code.org/s/aquatic/stage/1/puzzle/8","freePlay":false,"bonus":null,"display_as_unplugged":false},{"ids":[14499],"activeId":14499,"position":9,"kind":"puzzle","icon":null,"is_concept_level":false,"title":9,"url":"http://studio.code.org/s/aquatic/stage/1/puzzle/9","freePlay":false,"bonus":null,"display_as_unplugged":false},{"ids":[14484],"activeId":14484,"position":10,"kind":"puzzle","icon":null,"is_concept_level":false,"title":10,"url":"http://studio.code.org/s/aquatic/stage/1/puzzle/10","freePlay":false,"bonus":null,"display_as_unplugged":false},{"ids":[14485],"activeId":14485,"position":11,"kind":"puzzle","icon":null,"is_concept_level":false,"title":11,"url":"http://studio.code.org/s/aquatic/stage/1/puzzle/11","freePlay":false,"bonus":null,"display_as_unplugged":false},{"ids":[14486],"activeId":14486,"position":12,"kind":"puzzle","icon":null,"is_concept_level":false,"title":12,"url":"http://studio.code.org/s/aquatic/stage/1/puzzle/12","freePlay":true,"bonus":null,"display_as_unplugged":false}],"description_student":"","description_teacher":"","finishLink":"//code.org/api/hour/finish/aquatic","finishText":"完成了！","stage_extras_level_url":"http://studio.code.org/s/aquatic/stage/1/extras"},
+    null,
+    "14483",
+    -1,
+    null,
+    null
+  )
+  //]]>
+</script>
+
+<div class="full_container">
+
+
+<link rel="stylesheet" media="all" href="./Code.org - 《我的世界》：水上航行_files/video-js.css">
+<div id="notes-content" style="display: none;">
+<ul>
+<li>
+<a href="https://studio.code.org/s/aquatic/stage/1/puzzle/1#video">
+视频。
+<span class="video-name"></span>
+</a>
+</li>
+<li>
+<a href="https://studio.code.org/s/aquatic/stage/1/puzzle/1#notes-outer">看不到视频吗？请看文字说明。</a>
+</li>
+</ul>
+</div>
+<script data-level="{&quot;redirect_script_url&quot;:null,&quot;script_name&quot;:&quot;aquatic&quot;,&quot;course_name&quot;:null}" src="./Code.org - 《我的世界》：水上航行_files/showwpe4af6790e4e3701e4255.min.js.下载"></script>
+<div id="redirect-dialog"></div>
+<div id="level-body">
+<div id="hidden-stage" style="display: none">
+<div style="margin-bottom: 15px">
+你的老师没有预料到你来到这里。请询问你的老师你应该上什么课。
+</div>
+<a href="https://studio.code.org/s/aquatic">
+<button class="btn btn-large btn-primary">
+转到单元概述
+</button>
+</a>
+</div>
+
+<div style="display: none;">
+
+</div>
+<span id="fa-preload" style="font: 1px FontAwesome; position: absolute;">&nbsp;</span>
+<div id="codeApp" class=" pin_bottom"><div data-reactroot=""><div id="rotateContainer" style="position: fixed; z-index: 10001; background-color: white; top: 0px; left: 0px; right: 0px; bottom: 0px; width: 100%; height: 100%;"><div style="background-position: 50% 50%; background-size: contain; background-repeat: no-repeat; width: 1600px; height: 720px; background-image: url(&quot;/blockly/media/turnphone_horizontal.png&quot;);"><div style="position: relative; top: 50%; left: -50%; margin-left: 50px; margin-right: -50px;"><p style="text-align: center; font-size: 26px; line-height: 26px; transform: rotate(90deg);"><!-- react-text: 6 -->旋转您的设备。<!-- /react-text --><br><!-- react-text: 8 -->关闭设置中的旋转锁定。<!-- /react-text --></p></div></div></div><!-- react-empty: 112 --><div id="visualizationColumn" class="responsive pin_bottom"><span><div id="visualization" class="responsive"><div id="minecraft-frame"><div id="phaser-game"><canvas width="400" height="400" style="display: block; touch-action: none; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 400px; height: 400px; cursor: inherit;"></canvas></div></div></div><div><div id="gameButtons" data-radium="true" style="margin-bottom: -18px;"><span id="runButtonWrapper" data-radium="true"><button type="button" id="runButton" class="launch blocklyLaunch" data-radium="true"><div>运行</div><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAkAAAEALAAAAAABAAEAAAICTAEAOw==" class="run26"></button></span><button type="button" id="resetButton" class="launch blocklyLaunch" data-radium="true" style="display: none;"><div>重置</div><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAkAAAEALAAAAAABAAEAAAICTAEAOw==" class="reset26"></button><!-- react-text: 24 --> <!-- /react-text --><div id="right-button-cell"><button type="button" id="rightButton" class="share mc-share-button"><div>完成</div></button></div></div><div id="gameButtonExtras"></div></div><div id="belowVisualization" style="top: 265px; bottom: 46px;"><div class="reference_area" id="reference_area">
+<p class="help_title">需要帮助吗？</p>
+<p class="help_subtitle">看看这些视频和提示</p>
+<a data-src="https://www.youtube-nocookie.com/embed/92sMXSm4dIg/?autoplay=1&amp;cc_lang_pref=zh&amp;cc_load_policy=1&amp;enablejsapi=1&amp;iv_load_policy=3&amp;modestbranding=1&amp;rel=0&amp;showinfo=1&amp;v=92sMXSm4dIg&amp;wmode=transparent" data-key="mc_2018_intro" data-name="《我的世界》：水上航行简介" data-download="https://videos.code.org/levelbuilder/mc_2018_intro-mp4.mp4" data-thumbnail="/c/video_thumbnails/mc_2018_intro.jpg" data-enable-fallback="true" data-autoplay="true" class="video_link" href="https://studio.code.org/s/aquatic/stage/1/puzzle/1#"><img id="thumbnail_92sMXSm4dIg" class="video_thumbnail" src="./Code.org - 《我的世界》：水上航行_files/mc_2018_intro.jpg" alt="Mc 2018 intro">
+<div class="video_name">
+<span>《我的世界》：水上航行简介</span>
+</div>
+</a>
+<div style="clear: both;"></div>
+</div></div></span></div><div id="visualizationResizeBar" class="fa fa-ellipsis-v"></div><span><div class="editor-column" data-radium="true" style="position: absolute; margin-left: 15px; top: 0px; right: 0px; height: 170px;"><div data-radium="true" style="height: 30px; background-color: rgb(59, 59, 59); color: rgb(255, 255, 255); overflow-y: hidden; user-select: none;"><div data-radium="true" style="color: rgb(51, 51, 51);"><div data-radium="true" style="float: left; padding-top: 6px; padding-left: 30px;"><a class="uitest-instructionsTab" style="margin-right: 5px; padding-left: 10px; padding-right: 10px; padding-bottom: 6px; font-weight: bold; cursor: pointer; border-bottom: 2px solid rgb(255, 255, 255); color: rgb(255, 255, 255);">说明</a></div></div></div><div data-radium="true"><div id="scroll-container" data-radium="true" style="background-color: rgb(100, 100, 100); position: absolute; top: 30px; bottom: 0px; left: 0px; right: 0px; overflow: hidden;"><div data-radium="true"><div data-radium="true" style="position: relative; top: 0px; right: 0px; height: 183px;"><div data-radium="true" style="padding-left: 60px; padding-right: 120px; float: left; width: 100%; box-sizing: border-box; background-color: rgb(100, 100, 100);"><div data-radium="true" style="width: 100%; position: relative; float: left; margin-right: -300px; padding-right: 300px; overflow-y: scroll; height: 140px;"><div class="csf-top-instructions" data-radium="true" style="padding: 5px 0px;"><div data-radium="true" style="position: relative;"><div data-radium="true" style="background-color: rgb(59, 59, 59); border-radius: 4px; margin: 5px 0px; padding: 5px 10px; position: relative; border-style: dashed; border-width: 0px; border-color: white;"><div style="overflow: hidden;"><div class="instructions-markdown" data-radium="true" style="margin-bottom: 0px; padding-top: 0px; margin-top: 0px;"><div><p><!-- react-text: 50 -->您需要补给以进行航行。从<!-- /react-text --><strong><!-- react-text: 52 -->箱子<!-- /react-text --></strong><img src="./Code.org - 《我的世界》：水上航行_files/e0cf43fd36a50dd16ee06595047bfd8f-image-1538697999418.png"><!-- react-text: 54 --> 中收集一艘<!-- /react-text --><strong><!-- react-text: 56 -->船<!-- /react-text --></strong><!-- react-text: 57 --> <!-- /react-text --><img src="./Code.org - 《我的世界》：水上航行_files/0b3162de9dc0abf3e0890d315b8cc699-image-1538697977747.png"><!-- react-text: 59 --> 。<!-- /react-text --></p></div></div></div></div></div></div></div><div data-radium="true" style="position: absolute; float: left; width: 60px; right: 60px; margin-left: 0px; margin-right: 0px; bottom: 43px; left: 0px;"><div data-radium="true" style="color: rgb(0, 0, 0); margin-bottom: 0px; position: relative; cursor: default;"><div class="prompt-icon-cell" data-radium="true"><img src="./Code.org - 《我的世界》：水上航行_files/Pop_Up_Character_Steve_Neutral.png" id="prompt-icon" style="max-width: 50px;"></div></div></div><div data-radium="true" style="position: relative; float: left; width: 120px; margin-right: -120px; margin-left: 0px;"><div data-radium="true"><button type="button" id="toggleButton" data-radium="true" style="background-color: rgb(0, 148, 202); color: rgb(255, 255, 255); white-space: nowrap; position: absolute; right: 0px; margin-top: 5px; margin-right: 5px; padding: 5px; margin-bottom: 0px;"><img src="./Code.org - 《我的世界》：水上航行_files/1x1.gif" class="less-btn toggle26"><!-- react-text: 71 -->更少<!-- /react-text --></button><div data-radium="true" style="position: relative; top: 50px; left: 38px;"><button type="button" class="arrow" data-radium="true" style="position: absolute; transition: opacity 200ms ease 0s; margin: 0px; opacity: 0; top: 0px;"><img src="./Code.org - 《我的世界》：水上航行_files/1x1.gif" class="scroll-up-btn"></button><button type="button" class="arrow" data-radium="true" style="position: absolute; transition: opacity 200ms ease 0s; margin: 0px; opacity: 0; bottom: -90px;"><img src="./Code.org - 《我的世界》：水上航行_files/1x1.gif" class="scroll-down-btn"></button></div></div></div></div></div></div></div><div id="ui-test-resizer" data-radium="true" style="position: absolute; height: 13px; left: 0px; right: 0px; top: 170px;"><div class="fa fa-ellipsis-h" data-radium="true" style="width: 100%; color: rgb(198, 202, 205); font-size: 24px; text-align: center; cursor: ns-resize; white-space: nowrap; line-height: 13px; padding-top: 1px;"></div></div></div></div><div class="editor-column" style="position: absolute; right: 0px; bottom: 0px; margin-left: 15px; top: 183px;"><div id="codeWorkspace" style="position: absolute; left: 0px; right: 0px; bottom: 0px; top: 0px; border-style: solid none none; border-top-width: 1px; border-top-color: rgb(221, 221, 221);" dir="LTR"><span id="codeWorkspaceWrapper" data-radium="true"><div id="headers" dir="ltr" class="" data-radium="true" style="height: 30px; background-color: rgb(118, 101, 160); color: rgb(255, 255, 255); overflow-y: hidden; user-select: none;"><div id="codeModeHeaders" data-radium="true"><div id="toolbox-header" data-radium="true" style="text-align: center; white-space: nowrap; overflow-x: hidden; height: 30px; line-height: 30px; width: 140.999px;"><i id="hide-toolbox-icon" class="fa fa-chevron-circle-right" data-radium="true" style="display: none; font-size: 18px;"></i><span>模块</span></div><div id="show-toolbox-header" data-radium="true" style="text-align: center; white-space: nowrap; overflow-x: hidden; height: 30px; line-height: 30px; display: none;"><span id="show-toolbox-click-target" data-radium="true"><i id="show-toolbox-icon" class="fa fa-chevron-circle-right" data-radium="true" style="font-size: 18px;"></i><span>显示工具箱</span></span></div><div id="show-code-header" data-radium="true" style="cursor: pointer; float: right; overflow: hidden; background-color: rgb(96, 96, 96); margin: 3px 3px 3px 0px; height: 24px; border-radius: 4px; font-family: &quot;Gotham 5r&quot;, sans-serif; line-height: 18px; color: rgb(191, 191, 191); border: none; display: inline-block;"><span data-radium="true" style="padding: 0px 12px;"><img src="data:image/gif;base64,R0lGODlhEAAQAIAAAP///////yH+GkNyZWF0ZWQgd2l0aCBHSU1QIG9uIGEgTWFjACH5BAEKAAEALAAAAAAQABAAAAIdjI+py40AowRp2molznBzB3LTIWpGGZEoda7gCxYAOw==" data-radium="true" style="display: none; height: 18px; line-height: 24px; vertical-align: text-bottom; padding-right: 8px;"><i class="fa fa-code" data-radium="true" style="line-height: 24px; padding-right: 8px; font-size: 15px; font-weight: bold;"></i><span>显示代码</span></span></div><div id="clear-puzzle-header" data-radium="true" style="cursor: pointer; float: right; overflow: hidden; background-color: rgb(96, 96, 96); margin: 3px 3px 3px 0px; height: 24px; border-radius: 4px; font-family: &quot;Gotham 5r&quot;, sans-serif; line-height: 18px; color: rgb(191, 191, 191); border: none;"><span data-radium="true" style="padding: 0px 12px;"><i class="fa fa-undo" data-radium="true" style="line-height: 24px; padding-right: 8px; font-size: 15px; font-weight: bold;"></i><span>重新开始</span></span></div><div id="versions-header" data-radium="true" style="cursor: pointer; float: right; overflow: hidden; background-color: rgb(96, 96, 96); margin: 3px 3px 3px 0px; height: 24px; border-radius: 4px; font-family: &quot;Gotham 5r&quot;, sans-serif; line-height: 18px; color: rgb(191, 191, 191); border: none;"><span data-radium="true" style="padding: 0px 12px;"><i class="fa fa-clock-o" data-radium="true" style="line-height: 24px; padding-right: 8px; font-size: 15px; font-weight: bold;"></i><span>版本历史</span></span></div><div id="workspace-header" data-radium="true" style="text-align: center; white-space: nowrap; overflow-x: hidden; height: 30px; line-height: 30px;"><span id="workspace-header-span">工作区域</span><div id="blockCounter" data-radium="true" style="display: inline-block;"><div id="blockUsed" class="block-counter-default">1</div><span> / </span><span id="idealBlockNumber">3</span><span> 模块</span></div></div></div></div></span><svg id="blocklyFilters" width="0" height="0" style="display: block"><defs id="blocklySvgDefsGlobal"><filter id="blocklyEmboss"><fegaussianblur in="SourceAlpha" stdDeviation="1" result="blur"></fegaussianblur><fespecularlighting in="blur" surfaceScale="1" specularConstant="0.5" specularExponent="10" lighting-color="white" result="specOut"><fepointlight x="-5000" y="-10000" z="20000"></fepointlight></fespecularlighting><fecomposite in="specOut" in2="SourceAlpha" operator="in" result="specOut"></fecomposite><fecomposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"></fecomposite></filter><filter id="blocklyTrashcanShadowFilter" height="150%" y="-20%"><fegaussianblur in="SourceAlpha" stdDeviation="2" result="blur"></fegaussianblur><feoffset in="blur" dx="1" dy="1" result="offsetBlur"></feoffset><femerge><femergenode in="offsetBlur"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter><filter id="blocklyShadowFilter"><fegaussianblur stdDeviation="2"></fegaussianblur></filter><pattern id="blocklyDisabledPattern" patternUnits="userSpaceOnUse" width="10" height="10"><rect width="10" height="10" fill="#aaa"></rect><path d="M 0 0 L 10 10 M 10 0 L 0 10" stroke="#cc0"></path></pattern><filter id="blocklyTypeHintFilter"><feconvolvematrix order="5,5" kernelMatrix="0 0 0 0 0 0 0 0 0.5 1 0.5 1 1 1 1 0 0 0 0 0 0 0 0 0.5 1"></feconvolvematrix></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="blocklySvg" width="565px" height="239px"><defs id="blocklySvgDefs"></defs><g class="svgFlyoutGroup" transform="translate(0,0)" style="display: block;"><path class="blocklyFlyoutBackground" d="M 0,0 h 132.99850463867188 a 8 8 0 0 1 8 8 v 223 a 8 8 0 0 1 -8 8 h -132.99850463867188 z" style="fill: rgb(221, 221, 221);"></path><g class="svgGroup" style="opacity: 1;"><g class="svgClippingGroup"><g class="svgBlockCanvas" transform="translate(0,8)"><rect fill-opacity="0" width="79.66667175292969" height="29" x="16" y="8"></rect><g tabindex="0" block-id="1" class="blocklyDraggable" transform="translate(16, 8)"><path class="blocklyPathDark" transform="translate(1, 1)" fill-rule="evenodd" fill="#006a71" d="m 0,8 A 8,8 0 0,1 8,0  H 15 l 6,4 3,0 6,-4 H 78.66666793823242 v 25  H 30 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z
+"></path><path class="blocklyPath" fill-rule="evenodd" fill="#00b0bd" d="m 0,8 A 8,8 0 0,1 8,0  H 15 l 6,4 3,0 6,-4 H 78.66666793823242 v 25  H 30 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z
+"></path><path class="blocklyPathLight" stroke="#4dc8d1" d="m 1,7 A 7,7 0 0,1 8,1 H 15 l 6.5,4 2,0 6.5,-4 H 78.66666793823242 M 77.66666793823242,1 M 3.050252531694167,21.949747468305834 A 7,7 0 0,1 1,17 V 8
+"></path><text class="blocklyText" transform="translate(10, 18)">向前移动</text></g><rect fill-opacity="0" width="105.99850463867188" height="29" x="16" y="61"></rect><g tabindex="0" block-id="2" class="blocklyDraggable" transform="translate(16, 61)"><path class="blocklyPathDark" transform="translate(1, 1)" fill-rule="evenodd" fill="#006a71" d="m 0,8 A 8,8 0 0,1 8,0  H 15 l 6,4 3,0 6,-4 H 104.99850654602051 v 25  H 30 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z
+"></path><path class="blocklyPath" fill-rule="evenodd" fill="#00b0bd" d="m 0,8 A 8,8 0 0,1 8,0  H 15 l 6,4 3,0 6,-4 H 104.99850654602051 v 25  H 30 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z
+"></path><path class="blocklyPathLight" stroke="#4dc8d1" d="m 1,7 A 7,7 0 0,1 8,1 H 15 l 6.5,4 2,0 6.5,-4 H 104.99850654602051 M 103.99850654602051,1 M 3.050252531694167,21.949747468305834 A 7,7 0 0,1 1,17 V 8
+"></path><text class="blocklyText" transform="translate(10, 18)">转向</text><g class="blocklyEditableText" transform="translate(49.33333396911621, 18)" style="cursor: default;"><rect rx="4" ry="4" x="-5" y="-12" height="16" width="55.6651725769043"></rect><text class="blocklyText">左&nbsp;↺<tspan class="blocklyArrow" style="fill: rgb(0, 176, 189);"> ▼</tspan></text></g></g></g></g><g class="svgBubbleCanvas"></g><g display="none" transform="translate(125.99850463867188, 8)"><rect class="blocklyScrollbarBackground" width="15" height="223"></rect><rect class="blocklyScrollbarKnob" rx="4" ry="4" width="9" x="3" height="223" y="0"></rect></g><g><rect class="blocklyScrollbarBackground" width="15"></rect><rect class="blocklyScrollbarKnob" rx="4" ry="4" width="9" x="3"></rect></g><g class="svgDebugCanvas"></g></g><g id="trashcan" filter="url(#blocklyTrashcanShadowFilter)" style="display: none; pointer-events: none; opacity: 0;" transform="translate(35, 20)"><image width="70" height="70" xlink:href="/blockly/media/canclosed.png"></image><image width="70" height="70" visibility="visible" xlink:href="/blockly/media/canopen.png"></image><g visibility="hidden"><line x1="15" y1="15" x2="55" y2="55" stroke="#c00" stroke-width="5"></line><circle cx="36" cy="34" r="28" stroke="#c00" stroke-width="5" fill="none"></circle></g></g></g><g class="svgGroup"><g class="svgClippingGroup"><g class="svgBlockCanvas" transform="translate(140.99850463867188,0)"><g tabindex="0" block-id="3" class="blocklyDeletable blocklyUndraggable" transform="translate(16, 16)"><path class="blocklyPathDark" transform="translate(1, 1)" fill-rule="evenodd" fill="#986200" d="m 0,8 A 8,8 0 0,1 8,0  H 78.66666793823242 v 25  H 30 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z
+"></path><path class="blocklyPath" fill-rule="evenodd" fill="#fda400" d="m 0,8 A 8,8 0 0,1 8,0  H 78.66666793823242 v 25  H 30 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z
+"></path><path class="blocklyPathLight" stroke="#febf4d" d="m 1,7 A 7,7 0 0,1 8,1 H 78.66666793823242 M 77.66666793823242,1 M 3.050252531694167,21.949747468305834 A 7,7 0 0,1 1,17 V 8
+"></path><text class="blocklyText" transform="translate(10, 18)">当运行时</text></g></g></g><g class="svgBubbleCanvas" transform="translate(140.99850463867188,0)"></g><g display="none" transform="translate(550, 0)"><rect class="blocklyScrollbarBackground" width="15" height="239"></rect><rect class="blocklyScrollbarKnob" rx="4" ry="4" width="9" x="3" height="239" y="0"></rect></g><g class="svgDebugCanvas"></g></g><g class="blocklyHidden"><rect class="blocklyTooltipShadow" x="2" y="2"></rect><rect class="blocklyTooltipBackground"></rect><text class="blocklyTooltipText"></text></g></svg></div></div></span><div class="clear"></div></div></div>
+<script>
+  //<![CDATA[
+  var script_path = "/s/aquatic/stage/1/puzzle/1";
+  var appOptions = {"levelGameName":"Craft","skinId":"craft","baseUrl":"/blockly/","app":"craft","droplet":false,"level":{"startBlocks":"\u003cxml\u003e\u003cblock type=\"when_run\" deletable=\"false\" movable=\"false\"\u003e\u003cnext\u003e\u003cblock type=\"craft_moveForward\"/\u003e\u003c/next\u003e\u003c/block\u003e\u003c/xml\u003e","toolbox":"\u003cxml\u003e\u003cblock type=\"craft_moveForward\"/\u003e\u003cblock type=\"craft_turn\"\u003e\u003ctitle name=\"DIR\"\u003eleft\u003c/title\u003e\u003c/block\u003e\u003c/xml\u003e","skin":"craft","groundPlane":["water","water","water","water","water","water","water","water","water","water","water","water","sand","sand","water","water","water","water","water","water","water","water","sand","sand","sand","water","water","water","water","water","water","sand","sand","sand","sand","planksOak","planksOak","water","water","water","sand","sand","sand","sand","sand","water","water","water","water","water","sand","sand","sand","sand","sand","sand","water","water","water","water","sand","sand","sand","sand","sand","sand","water","water","water","water","water","sand","sand","sand","sand","sand","water","water","water","water","water","water","sand","sand","sand","water","water","water","water","stone","water","water","water","water","water","water","water","stone","water","water"],"groundDecorationPlane":["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","tallGrass","","","","","","","","","","","","","","","","","","","","","","tallGrass","","","","","","","","","","","","","","","","",""],"actionPlane":["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","treeJungle","","","boatChest","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],"playerStartPosition":[4,7],"gridWidth":10,"gridHeight":10,"playerStartDirection":0,"isDaytime":true,"isEventLevel":false,"usePlayer":true,"verificationFunction":"function (verificationAPI) {\r\n  // List of x, y positions.\r\n  var successPositions = [[4, 5], [3, 4], [4, 3]];\r\n  for (var i = 0; i \u003c successPositions.length; i++) {\r\n    if (verificationAPI.isEntityAt(\"Player\", successPositions[i])) {\r\n      return true;\r\n    }\r\n  }\r\n}\r\n","timeoutVerificationFunction":"function (verificationAPI) {\r\n  // Fail if we hit the end of the timeout.\r\n  return false;\r\n}","failureCheckFunction":"function (verificationAPI) {\r\n  // Fail instantly\r\n  return false;\r\n}","levelVerificationTimeout":30000,"embed":null,"instructionsImportant":false,"isK1":false,"neverAutoplayVideo":false,"disableParamEditing":true,"disableVariableEditing":false,"disableProcedureAutopopulate":false,"topLevelProcedureAutopopulate":false,"useModalFunctionEditor":false,"hideShareAndRemix":false,"disableIfElseEditing":false,"showTypeHints":false,"includeSharedFunctions":false,"freePlay":false,"agentStartDirection":0,"useScore":false,"isAgentLevel":false,"dayNightCycleStart":0,"dayNightCycleTime":0,"isAquaticLevel":true,"boat":false,"ttsShortInstructionsOverride":"Collect a boat from the chest.","ttsLongInstructionsOverride":"You need supplies for the voyage ahead. Collect a boat from the chest.","videoKey":"mc_2018_intro","shortInstructions":"从箱子中拿出一艘船。","longInstructions":"您需要补给以进行航行。从**箱子**![](https://images.code.org/e0cf43fd36a50dd16ee06595047bfd8f-image-1538697999418.png) 中收集一艘**船** ![](https://images.code.org/0b3162de9dc0abf3e0890d315b8cc699-image-1538697977747.png) 。","ideal":3,"showPopupOnLoad":"playerSelection","sharedBlocks":[{"name":"craft_ifPath","pool":"craft","category":"","config":{"func":"ifPath","blockText":"如果路径 {DIR}\n{STATEMENT}","args":[{"name":"DIR","options":[["前面","'ahead'"],["向右转","'right'"],["向左转","'left'"]]},{"name":"STATEMENT","statement":true}],"color":[197,0.88,0.78]},"helperCode":"function ifPath(dir, callback) {\n  var condition, blockType;\n  if (dir === 'ahead') {\n    condition = walkableAhead();\n  } else if (dir === 'right') {\n    condition = walkableToRight();\n  } else {\n    condition = walkableToLeft();\n  }\n\n  if (condition) {\n    callback();\n  }\n}"},{"name":"craft_ifStandingOn","pool":"craft","category":"","config":{"func":"ifStandingOn","blockText":"站在{TYPE}\n{STATEMENT}","args":[{"name":"TYPE","options":[["蓝色珊瑚","'blueCoralBlock'"],["红色珊瑚","'redCoralBlock'"],["沙子","'sand'"],["深水","'wool_blue'"],["橡木板","'planksOak'"],["海晶灯","'seaLantern'"]]},{"name":"STATEMENT","statement":true}],"color":[197,0.88,0.78]},"helperCode":"function ifStandingOn(blockType, callback) {\n  if (getStandingOnBlockType() === blockType) {\n    callback();\n  }\n}"},{"name":"craft_ifStandingOnLimit","pool":"craft","category":"","config":{"func":"ifStandingOnLimit","blockText":"站在{TYPE}\n{STATEMENT}","args":[{"name":"TYPE","options":[["沙子","'sand'"],["暗海晶石","'darkPrismarine'"],["海晶灯","'seaLantern'"]]},{"name":"STATEMENT","statement":true}],"color":[197,0.88,0.78]},"helperCode":"function ifStandingOnLimit(blockType, callback) {\n  if (getStandingOnBlockType() === blockType) {\n    callback();\n  }\n}"},{"name":"craft_log","pool":"craft","category":"","config":{"func":"log","blockText":"日志消息 {MESSAGE}","args":[{"name":"MESSAGE"}]},"helperCode":"function log(message) {\n  console.log(message);\n}"},{"name":"craft_moveForward","pool":"craft","category":"","config":{"func":"moveForward","blockText":"向前移动"},"helperCode":null},{"name":"craft_placeBlock","pool":"craft","category":"","config":{"func":"placeBlock","blockText":"放下{blockType}","args":[{"name":"blockType","options":[["去皮橡木","\"strippedOak\""],["去皮深色橡木","\"strippedDarkOak\""],["石砖","\"stoneBricks\""],["苔石砖","\"mossyStoneBricks\""],["裂石砖","\"crackedStoneBricks\""],["装饰性石砖","\"decorativeStoneBricks\""],["管珊瑚块","\"blueCoralBlock\""],["脑纹珊瑚块","\"pinkCoralBlock\""],["气泡珊瑚块","\"magentaCoralBlock\""],["火珊瑚块","\"redCoralBlock\""],["鹿角珊瑚块","\"yellowCoralBlock\""],["失活的管珊瑚块","\"blueDeadCoralBlock\""],["失活的脑纹珊瑚块","\"pinkDeadCoralBlock\""],["失活的气泡珊瑚块","\"magentaDeadCoralBlock\""],["失活的火珊瑚块","\"readDeadCoralBlock\""],["失活的鹿角珊瑚块","\"yellowDeadCoralBlock\""],["海晶石","\"prismarine\""],["暗海晶石","\"darkPrismarine\""],["海晶灯","\"seaLantern\""],["霜冰","\"packedIce\""],["蓝冰","\"blueIce\""],["黑色混凝土","\"blackConcrete\""],["海草","\"seaGrass\""],["海带","\"kelp\""],["磨制花岗岩","\"polishedGranite\""]]}]},"helperCode":"function placeBlock(blockType) {\n  // TODO: update to take a dropdown list of options\n  api.placeBlock(null, blockType, \"Player\");\n}"},{"name":"craft_placePrismarine","pool":"craft","category":"","config":{"func":"placePrismarine","blockText":"放置海晶石"},"helperCode":"function placePrismarine() {\n  api.placeBlock(null, \"prismarine\", \"Player\");\n}"},{"name":"craft_placeTorch","pool":"craft","category":"","config":{"func":"placeTorch","blockText":"放下火把"},"helperCode":"function placeTorch() {\n  api.placeBlock(null, \"torch\", \"Player\");\n}"},{"name":"craft_repeatUntilConduit","pool":"craft","category":"","config":{"func":"repeatUntilConduit","color":[322,0.9,0.95],"blockText":"重复，直至潮涌核心完成\n{STATEMENT}","args":[{"name":"STATEMENT","statement":true}]},"helperCode":"var MAX_STEPS = 1000;\nfunction repeatUntilConduit(callback) {\n  for (var i = 0; i \u003c MAX_STEPS; i++) {\n    if (isFinished()) {\n      break;\n    }\n    callback();\n  }\n}"},{"name":"craft_repeatUntilGoal","pool":"craft","category":"","config":{"func":"repeatUntilGoal","color":[322,0.9,0.95],"blockText":"重复，直至目标达成\n{STATEMENT}","args":[{"name":"STATEMENT","statement":true}]},"helperCode":"var MAX_STEPS = 1000;\nfunction repeatUntilGoal(callback) {\n  for (var i = 0; i \u003c MAX_STEPS; i++) {\n    if (isFinished()) {\n      break;\n    }\n    callback();\n  }\n}"},{"name":"craft_spawnEntity","pool":"craft","category":"","config":{"func":"spawnEntity","blockText":"生成{ENTITY}","args":[{"name":"ENTITY","options":[["鳕鱼","\"cod\""],["海豚","\"dolphin\""],["鲑鱼","\"salmon\""],["海龟","\"seaTurtle\""],["鱿鱼","\"squid\""],["热带鱼","\"tropicalFish\""]]}]},"helperCode":"function spawnEntity(entity) {\n\tapi.placeBlock(null, entity, \"Player\");\n}"},{"name":"craft_turn","pool":"craft","category":"","config":{"func":"turn","blockText":"转向{DIR}","args":[{"name":"DIR","type":"String","options":[["右 ↻","right"],["左 ↺","left"]]}]},"helperCode":"function turn(dir) {\n  if (dir === 'right') {\n    turnRight();\n  } else {\n    turnLeft();\n  }\n}"}],"levelId":"custom","editCode":false,"puzzle_number":1,"stage_total":12,"final_level":false,"lastAttempt":null,"submittable":false,"levelVideos":[{"src":"https://www.youtube-nocookie.com/embed/92sMXSm4dIg/?autoplay=1\u0026cc_lang_pref=zh\u0026cc_load_policy=1\u0026enablejsapi=1\u0026iv_load_policy=3\u0026modestbranding=1\u0026rel=0\u0026showinfo=1\u0026v=92sMXSm4dIg\u0026wmode=transparent","key":"mc_2018_intro","name":"《我的世界》：水上航行简介","download":"https://videos.code.org/levelbuilder/mc_2018_intro-mp4.mp4","thumbnail":"/c/video_thumbnails/mc_2018_intro.jpg","enable_fallback":true,"autoplay":true}],"mapReference":null,"referenceLinks":null},"scriptId":353,"scriptName":"aquatic","textToSpeechEnabled":false,"fullWidth":true,"smallFooter":true,"hasI18n":true,"callouts":[],"autoplayVideo":{"src":"https://www.youtube-nocookie.com/embed/92sMXSm4dIg/?autoplay=1\u0026cc_lang_pref=zh\u0026cc_load_policy=1\u0026enablejsapi=1\u0026iv_load_policy=3\u0026modestbranding=1\u0026rel=0\u0026showinfo=1\u0026v=92sMXSm4dIg\u0026wmode=transparent","key":"mc_2018_intro","name":"《我的世界》：水上航行简介","download":"https://videos.code.org/levelbuilder/mc_2018_intro-mp4.mp4","thumbnail":"/c/video_thumbnails/mc_2018_intro.jpg","enable_fallback":true,"autoplay":true},"postMilestoneMode":"all","puzzleRatingsUrl":"/puzzle_ratings","authoredHintViewRequestsUrl":"/authored_hint_view_requests.json","serverLevelId":14483,"stagePosition":1,"levelPosition":1,"publicCaching":true,"hasContainedLevels":false,"nextLevelUrl":"/s/aquatic/stage/1/puzzle/2","isSignedIn":false,"isTooYoung":false,"pinWorkspaceToBottom":true,"hasVerticalScrollbars":true,"showExampleTestButtons":true,"report":{"fallback_response":{"success":{"timestamp":1573008692788,"script_id":353,"level_id":14483,"total_lines":null,"new_level_completed":null,"level_path":"/s/aquatic/stage/1/puzzle/1","redirect":"/s/aquatic/stage/1/puzzle/2","phone_share_url":"https://studio.code.org/sms/send","puzzle_ratings_enabled":true,"activity_id":null},"failure":{"timestamp":1573008692789,"script_id":353,"level_id":14483,"message":"try again","phone_share_url":"https://studio.code.org/sms/send","puzzle_ratings_enabled":true,"activity_id":null}},"callback":"https://studio.code.org/milestone/0/98181/14483","sublevelCallback":null},"isStartMode":false,"sendToPhone":false,"dialog":{"skipSound":false,"preTitle":null,"fallbackResponse":"{\"success\":{\"timestamp\":1573008692788,\"script_id\":353,\"level_id\":14483,\"total_lines\":null,\"new_level_completed\":null,\"level_path\":\"/s/aquatic/stage/1/puzzle/1\",\"redirect\":\"/s/aquatic/stage/1/puzzle/2\",\"phone_share_url\":\"https://studio.code.org/sms/send\",\"puzzle_ratings_enabled\":true,\"activity_id\":null},\"failure\":{\"timestamp\":1573008692789,\"script_id\":353,\"level_id\":14483,\"message\":\"try again\",\"phone_share_url\":\"https://studio.code.org/sms/send\",\"puzzle_ratings_enabled\":true,\"activity_id\":null}}","callback":"https://studio.code.org/milestone/0/98181/14483","sublevelCallback":null,"app":"craft","level":"custom","shouldShowDialog":true}};
+  appOptions.locale = 'zh_cn';
+  //]]>
+</script>
+
+</div>
+<img src="./Code.org - 《我的世界》：水上航行_files/begin_aquatic.png" alt="Begin aquatic">
+
+
+</div>
+<div id="page-small-footer"><div data-reactroot=""><div class="small-footer-base responsive" style="padding-bottom: 3px; padding-top: 3px;"><div><form id="localeForm" style="margin-bottom: 0px;" action="https://studio.code.org/locale" accept-charset="UTF-8" method="post"><input type="hidden" name="user_return_to" id="user_return_to" value="https://studio.code.org/s/aquatic/stage/1/puzzle/1"><select name="locale" id="locale" onchange="this.form.submit();"><option value="ar-SA">العربية</option>
+<option value="az-AZ">Azərbaycan dili</option>
+<option value="bg-BG">български</option>
+<option value="bs-BA">Bosanski</option>
+<option value="ca-ES">Català</option>
+<option value="cs-CZ">Čeština</option>
+<option value="da-DK">Dansk</option>
+<option value="de-DE">Deutsch</option>
+<option value="el-GR">Ελληνικά</option>
+<option value="en-US">English</option>
+<option value="es-ES">Español (España)</option>
+<option value="es-MX">Español (Latinoamérica)</option>
+<option value="et-EE">Eesti</option>
+<option value="eu-ES">Euskara</option>
+<option value="fa-IR">فارسی</option>
+<option value="fi-FI">Suomi</option>
+<option value="fr-FR">Français</option>
+<option value="ga-IE">Gaeilge</option>
+<option value="gl-ES">Galego</option>
+<option value="he-IL">עברית</option>
+<option value="hi-IN">हिन्दी</option>
+<option value="hr-HR">Hrvatski</option>
+<option value="hu-HU">Magyar</option>
+<option value="hy-AM">Հայերեն</option>
+<option value="id-ID">Bahasa Indonesia</option>
+<option value="is-IS">Íslenska</option>
+<option value="it-IT">Italiano</option>
+<option value="ja-JP">日本語</option>
+<option value="ka-GE">ქართული</option>
+<option value="ko-KR">한국어</option>
+<option value="kk-KZ">Қазақша</option>
+<option value="km-KH">ភាសាខ្មែរ</option>
+<option value="ky-KG">Кыргызча</option>
+<option value="lt-LT">Lietuvių</option>
+<option value="lv-LV">Latviešu</option>
+<option value="mi-NZ">Māori</option>
+<option value="my-MM">ဗမာစာ</option>
+<option value="nl-NL">Nederlands</option>
+<option value="nn-NO">Norsk (Nynorsk)</option>
+<option value="no-NO">Norsk (Bokmål)</option>
+<option value="pl-PL">Polski</option>
+<option value="pt-BR">Português (Brasil)</option>
+<option value="pt-PT">Português (Portugal)</option>
+<option value="ro-RO">Română</option>
+<option value="ru-RU">Русский</option>
+<option value="si-LK">සිංහල</option>
+<option value="sk-SK">Slovenčina</option>
+<option value="sl-SI">Slovenščina</option>
+<option value="sq-AL">Shqip</option>
+<option value="sr-SP">Српски</option>
+<option value="sv-SE">Svenska</option>
+<option value="th-TH">ภาษาไทย</option>
+<option value="tr-TR">Türkçe</option>
+<option value="uk-UA">Українська</option>
+<option value="vi-VN">Tiếng Việt</option>
+<option selected="selected" value="zh-CN">简体字</option>
+<option value="zh-TW">繁體字</option></select></form>
+</div><small><span><a class="privacy-link" href="https://code.org/privacy" target="_blank" style="color: rgb(0, 148, 202);">隐私政策</a><!-- react-text: 7 -->&nbsp;&nbsp;|&nbsp;&nbsp;<!-- /react-text --></span><span><a class="copyright-link" href="https://studio.code.org/s/aquatic/stage/1/puzzle/1#">版权</a><!-- react-text: 10 -->&nbsp;&nbsp;|&nbsp;&nbsp;<!-- /react-text --></span><a class="more-link" href="javascript:void(0)"><!-- react-text: 12 -->更多 <!-- /react-text --><i class="fa fa-caret-up"></i></a></small></div><div id="copyright-flyout" style="display: none; position: absolute; bottom: 0px; left: 0px; width: 650px; max-width: 50%; min-width: 207px;"><div id="copyright-scroll-area" style="overflow-y: auto; padding: 0.8em; border-bottom: thin solid rgb(231, 232, 234); margin-bottom: 51px;"><div><p><!-- react-text: 18 -->我们感谢<!-- /react-text --><a href="https://code.org/about/donors"><!-- react-text: 20 -->捐助者<!-- /react-text --></a><!-- react-text: 21 -->、<!-- /react-text --><a href="https://code.org/about/partners"><!-- react-text: 23 -->合作伙伴<!-- /react-text --></a><!-- react-text: 24 -->、<!-- /react-text --><a href="https://code.org/about/team"><!-- react-text: 26 -->扩展团队<!-- /react-text --></a><!-- react-text: 27 -->、视频演员、<!-- /react-text --><a href="https://code.org/about/advisors"><!-- react-text: 29 -->教育顾问<!-- /react-text --></a><!-- react-text: 30 -->在创建代码工作室中给予的支持。<!-- /react-text --></p></div><p>我们要特别感谢来自亚马逊、谷歌和微软的工程师帮助创建本教程。</p><div><p><!-- react-text: 34 -->我的世界™ © 2019 微软，保留所有权利。<!-- /react-text --><br><!-- react-text: 36 -->星球大战™ © 2019 迪斯尼和卢卡斯影业，保留所有权利。<!-- /react-text --><br><!-- react-text: 38 -->冰雪奇缘™ © 2019 迪斯尼，保留所有权利。<!-- /react-text --><br><!-- react-text: 40 -->冰河世纪™ © 2019 20世纪福克斯，保留所有权利。<!-- /react-text --><br><!-- react-text: 42 -->愤怒的小鸟™ © 2009-2019 维奥公司，保留所有权利。<!-- /react-text --><br><!-- react-text: 44 -->植物大战僵尸™ © 2019 电子艺界，保留所有权利。<!-- /react-text --><br><!-- react-text: 46 -->阿甘妙世界是TM，© 2019 卡通网络。<!-- /react-text --></p></div><div><p><!-- react-text: 49 -->Code.org 使用 p5.play 游戏资源库，根据 <!-- /react-text --><a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1-standalone.html"><!-- react-text: 51 -->GNU LGPL 2.1<!-- /react-text --></a><!-- react-text: 52 --> 之许可。<!-- /react-text --></p></div><p>由亚马逊网络服务</p><div><p><!-- react-text: 56 -->© Code.org, 2019. Code.org®, CODE Logo 和 Hour of Code® 是 Code.org 的注册商标。<!-- /react-text --></p></div></div></div><ul id="more-menu" style="display: none; bottom: 51px; width: 207px;"><li class="ui-test-report-abuse"><a href="https://studio.code.org/report_abuse" target="_blank">举报滥用</a></li><li class="ui-test-help-support"><a href="https://support.code.org/" target="_blank">帮助与支持</a></li><li class="ui-test-translate"><a href="https://code.org/translate" target="_blank">愿意参与内容翻译</a></li><li class="ui-test-tos"><a href="https://code.org/tos" target="_blank">使用条款</a></li></ul></div></div>
+<script>
+  // Render the footer on the non-share pages
+  ReactDOM.render(React.createElement(window.dashboard.SmallFooter, {"i18nDropdown":"%3Cform%20id=%22localeForm%22%20style=%22margin-bottom:%200px;%22%20action=%22https://studio.code.org/locale%22%20accept-charset=%22UTF-8%22%20method=%22post%22%3E%3Cinput%20type=%22hidden%22%20name=%22user_return_to%22%20id=%22user_return_to%22%20value=%22https://studio.code.org/s/aquatic/stage/1/puzzle/1%22%20/%3E%3Cselect%20name=%22locale%22%20id=%22locale%22%20onchange=%22this.form.submit();%22%3E%3Coption%20value=%22ar-SA%22%3E%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%3C/option%3E%0A%3Coption%20value=%22az-AZ%22%3EAz%C9%99rbaycan%20dili%3C/option%3E%0A%3Coption%20value=%22bg-BG%22%3E%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B8%3C/option%3E%0A%3Coption%20value=%22bs-BA%22%3EBosanski%3C/option%3E%0A%3Coption%20value=%22ca-ES%22%3ECatal%C3%A0%3C/option%3E%0A%3Coption%20value=%22cs-CZ%22%3E%C4%8Ce%C5%A1tina%3C/option%3E%0A%3Coption%20value=%22da-DK%22%3EDansk%3C/option%3E%0A%3Coption%20value=%22de-DE%22%3EDeutsch%3C/option%3E%0A%3Coption%20value=%22el-GR%22%3E%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CE%AC%3C/option%3E%0A%3Coption%20value=%22en-US%22%3EEnglish%3C/option%3E%0A%3Coption%20value=%22es-ES%22%3EEspa%C3%B1ol%20(Espa%C3%B1a)%3C/option%3E%0A%3Coption%20value=%22es-MX%22%3EEspa%C3%B1ol%20(Latinoam%C3%A9rica)%3C/option%3E%0A%3Coption%20value=%22et-EE%22%3EEesti%3C/option%3E%0A%3Coption%20value=%22eu-ES%22%3EEuskara%3C/option%3E%0A%3Coption%20value=%22fa-IR%22%3E%D9%81%D8%A7%D8%B1%D8%B3%DB%8C%3C/option%3E%0A%3Coption%20value=%22fi-FI%22%3ESuomi%3C/option%3E%0A%3Coption%20value=%22fr-FR%22%3EFran%C3%A7ais%3C/option%3E%0A%3Coption%20value=%22ga-IE%22%3EGaeilge%3C/option%3E%0A%3Coption%20value=%22gl-ES%22%3EGalego%3C/option%3E%0A%3Coption%20value=%22he-IL%22%3E%D7%A2%D7%91%D7%A8%D7%99%D7%AA%3C/option%3E%0A%3Coption%20value=%22hi-IN%22%3E%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80%3C/option%3E%0A%3Coption%20value=%22hr-HR%22%3EHrvatski%3C/option%3E%0A%3Coption%20value=%22hu-HU%22%3EMagyar%3C/option%3E%0A%3Coption%20value=%22hy-AM%22%3E%D5%80%D5%A1%D5%B5%D5%A5%D6%80%D5%A5%D5%B6%3C/option%3E%0A%3Coption%20value=%22id-ID%22%3EBahasa%20Indonesia%3C/option%3E%0A%3Coption%20value=%22is-IS%22%3E%C3%8Dslenska%3C/option%3E%0A%3Coption%20value=%22it-IT%22%3EItaliano%3C/option%3E%0A%3Coption%20value=%22ja-JP%22%3E%E6%97%A5%E6%9C%AC%E8%AA%9E%3C/option%3E%0A%3Coption%20value=%22ka-GE%22%3E%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%A3%E1%83%9A%E1%83%98%3C/option%3E%0A%3Coption%20value=%22ko-KR%22%3E%ED%95%9C%EA%B5%AD%EC%96%B4%3C/option%3E%0A%3Coption%20value=%22kk-KZ%22%3E%D2%9A%D0%B0%D0%B7%D0%B0%D2%9B%D1%88%D0%B0%3C/option%3E%0A%3Coption%20value=%22km-KH%22%3E%E1%9E%97%E1%9E%B6%E1%9E%9F%E1%9E%B6%E1%9E%81%E1%9F%92%E1%9E%98%E1%9F%82%E1%9E%9A%3C/option%3E%0A%3Coption%20value=%22ky-KG%22%3E%D0%9A%D1%8B%D1%80%D0%B3%D1%8B%D0%B7%D1%87%D0%B0%3C/option%3E%0A%3Coption%20value=%22lt-LT%22%3ELietuvi%C5%B3%3C/option%3E%0A%3Coption%20value=%22lv-LV%22%3ELatvie%C5%A1u%3C/option%3E%0A%3Coption%20value=%22mi-NZ%22%3EM%C4%81ori%3C/option%3E%0A%3Coption%20value=%22my-MM%22%3E%E1%80%97%E1%80%99%E1%80%AC%E1%80%85%E1%80%AC%3C/option%3E%0A%3Coption%20value=%22nl-NL%22%3ENederlands%3C/option%3E%0A%3Coption%20value=%22nn-NO%22%3ENorsk%20(Nynorsk)%3C/option%3E%0A%3Coption%20value=%22no-NO%22%3ENorsk%20(Bokm%C3%A5l)%3C/option%3E%0A%3Coption%20value=%22pl-PL%22%3EPolski%3C/option%3E%0A%3Coption%20value=%22pt-BR%22%3EPortugu%C3%AAs%20(Brasil)%3C/option%3E%0A%3Coption%20value=%22pt-PT%22%3EPortugu%C3%AAs%20(Portugal)%3C/option%3E%0A%3Coption%20value=%22ro-RO%22%3ERom%C3%A2n%C4%83%3C/option%3E%0A%3Coption%20value=%22ru-RU%22%3E%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%3C/option%3E%0A%3Coption%20value=%22si-LK%22%3E%E0%B7%83%E0%B7%92%E0%B6%82%E0%B7%84%E0%B6%BD%3C/option%3E%0A%3Coption%20value=%22sk-SK%22%3ESloven%C4%8Dina%3C/option%3E%0A%3Coption%20value=%22sl-SI%22%3ESloven%C5%A1%C4%8Dina%3C/option%3E%0A%3Coption%20value=%22sq-AL%22%3EShqip%3C/option%3E%0A%3Coption%20value=%22sr-SP%22%3E%D0%A1%D1%80%D0%BF%D1%81%D0%BA%D0%B8%3C/option%3E%0A%3Coption%20value=%22sv-SE%22%3ESvenska%3C/option%3E%0A%3Coption%20value=%22th-TH%22%3E%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%E0%B9%84%E0%B8%97%E0%B8%A2%3C/option%3E%0A%3Coption%20value=%22tr-TR%22%3ET%C3%BCrk%C3%A7e%3C/option%3E%0A%3Coption%20value=%22uk-UA%22%3E%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B0%3C/option%3E%0A%3Coption%20value=%22vi-VN%22%3ETi%E1%BA%BFng%20Vi%E1%BB%87t%3C/option%3E%0A%3Coption%20selected=%22selected%22%20value=%22zh-CN%22%3E%E7%AE%80%E4%BD%93%E5%AD%97%3C/option%3E%0A%3Coption%20value=%22zh-TW%22%3E%E7%B9%81%E9%AB%94%E5%AD%97%3C/option%3E%3C/select%3E%3C/form%3E%0A","privacyPolicyInBase":true,"copyrightInBase":true,"basePrivacyPolicyString":"隐私政策","baseCopyrightString":"版权","baseMoreMenuString":"更多","menuItems":[{"key":"report-abuse","text":"举报滥用","link":"/report_abuse","newWindow":true},{"key":"help-support","text":"帮助与支持","link":"https://support.code.org","newWindow":true},{"key":"translate","text":"愿意参与内容翻译","link":"https://code.org/translate","newWindow":true},{"key":"tos","text":"使用条款","link":"https://code.org/tos","newWindow":true}],"copyrightStrings":{"thank_you":"%E6%88%91%E4%BB%AC%E6%84%9F%E8%B0%A2%3Ca%20href=%22https://code.org/about/donors%22%3E%E6%8D%90%E5%8A%A9%E8%80%85%3C/a%3E%E3%80%81%3Ca%20href=%22https://code.org/about/partners%22%3E%E5%90%88%E4%BD%9C%E4%BC%99%E4%BC%B4%3C/a%3E%E3%80%81%3Ca%20href=%22https://code.org/about/team%22%3E%E6%89%A9%E5%B1%95%E5%9B%A2%E9%98%9F%3C/a%3E%E3%80%81%E8%A7%86%E9%A2%91%E6%BC%94%E5%91%98%E3%80%81%3Ca%20href=%22https://code.org/about/advisors%22%3E%E6%95%99%E8%82%B2%E9%A1%BE%E9%97%AE%3C/a%3E%E5%9C%A8%E5%88%9B%E5%BB%BA%E4%BB%A3%E7%A0%81%E5%B7%A5%E4%BD%9C%E5%AE%A4%E4%B8%AD%E7%BB%99%E4%BA%88%E7%9A%84%E6%94%AF%E6%8C%81%E3%80%82","help_from_html":"我们要特别感谢来自亚马逊、谷歌和微软的工程师帮助创建本教程。","art_from_html":"%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C\u0026%238482;%20\u0026copy;%202019%20%E5%BE%AE%E8%BD%AF%EF%BC%8C%E4%BF%9D%E7%95%99%E6%89%80%E6%9C%89%E6%9D%83%E5%88%A9%E3%80%82%3Cbr%20/%3E%E6%98%9F%E7%90%83%E5%A4%A7%E6%88%98\u0026%238482;%20\u0026copy;%202019%20%E8%BF%AA%E6%96%AF%E5%B0%BC%E5%92%8C%E5%8D%A2%E5%8D%A1%E6%96%AF%E5%BD%B1%E4%B8%9A%EF%BC%8C%E4%BF%9D%E7%95%99%E6%89%80%E6%9C%89%E6%9D%83%E5%88%A9%E3%80%82%3Cbr%20/%3E%E5%86%B0%E9%9B%AA%E5%A5%87%E7%BC%98\u0026%238482;%20\u0026copy;%202019%20%E8%BF%AA%E6%96%AF%E5%B0%BC%EF%BC%8C%E4%BF%9D%E7%95%99%E6%89%80%E6%9C%89%E6%9D%83%E5%88%A9%E3%80%82%3Cbr%20/%3E%E5%86%B0%E6%B2%B3%E4%B8%96%E7%BA%AA\u0026%238482;%20\u0026copy;%202019%2020%E4%B8%96%E7%BA%AA%E7%A6%8F%E5%85%8B%E6%96%AF%EF%BC%8C%E4%BF%9D%E7%95%99%E6%89%80%E6%9C%89%E6%9D%83%E5%88%A9%E3%80%82%3Cbr%20/%3E%E6%84%A4%E6%80%92%E7%9A%84%E5%B0%8F%E9%B8%9F\u0026%238482;%20\u0026copy;%202009-2019%20%E7%BB%B4%E5%A5%A5%E5%85%AC%E5%8F%B8%EF%BC%8C%E4%BF%9D%E7%95%99%E6%89%80%E6%9C%89%E6%9D%83%E5%88%A9%E3%80%82%3Cbr%20/%3E%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8\u0026%238482;%20\u0026copy;%202019%20%E7%94%B5%E5%AD%90%E8%89%BA%E7%95%8C%EF%BC%8C%E4%BF%9D%E7%95%99%E6%89%80%E6%9C%89%E6%9D%83%E5%88%A9%E3%80%82%3Cbr%20/%3E%E9%98%BF%E7%94%98%E5%A6%99%E4%B8%96%E7%95%8C%E6%98%AFTM%EF%BC%8C\u0026copy;%202019%20%E5%8D%A1%E9%80%9A%E7%BD%91%E7%BB%9C%E3%80%82","code_from_html":"Code.org%20%E4%BD%BF%E7%94%A8%20p5.play%20%E6%B8%B8%E6%88%8F%E8%B5%84%E6%BA%90%E5%BA%93%EF%BC%8C%E6%A0%B9%E6%8D%AE%20%3Ca%20href=%22http://www.gnu.org/licenses/old-licenses/lgpl-2.1-standalone.html%22%3EGNU%20LGPL%202.1%3C/a%3E%20%E4%B9%8B%E8%AE%B8%E5%8F%AF%E3%80%82","powered_by_aws":"由亚马逊网络服务","trademark":"\u0026copy;%20Code.org,%202019.%20Code.org\u0026reg;,%20CODE%20Logo%20%E5%92%8C%20Hour%20of%20Code\u0026reg;%20%E6%98%AF%20Code.org%20%E7%9A%84%E6%B3%A8%E5%86%8C%E5%95%86%E6%A0%87%E3%80%82"},"phoneFooter":false,"fullWidth":null,"channel":null}),
+    document.getElementById('page-small-footer'));
+</script>
+
+</div><iframe src="./Code.org - 《我的世界》：水上航行_files/a400912536.html" hidden="" aria-hidden="true" tabindex="-1" title="Optimizely Internal Frame" height="0" width="0" style="display: none;"></iframe>
+
+
+<link href="./Code.org - 《我的世界》：水上航行_files/common-50d65a73ae6e5709df1528761724a4d649705a5381b7f4f7f615c7ac11fa8a7f.css" rel="stylesheet" type="text/css">
+<link href="./Code.org - 《我的世界》：水上航行_files/craft-6c8c9c3959d95d072fdfb62eeabad0b9047ab61d6ff7ed8d21d90312ff426a3d.css" rel="stylesheet" type="text/css">
+<script src="./Code.org - 《我的世界》：水上航行_files/phaserwp9f1b924c778ccc980db8122cb70912eb.js.下载"></script>
+<script src="./Code.org - 《我的世界》：水上航行_files/blocklywp8ac2b38439b1ea6f060b.min.js.下载"></script>
+<script src="./Code.org - 《我的世界》：水上航行_files/blockly_localewp9ff25920469db650773894e49fadabcd.js.下载"></script>
+<script src="./Code.org - 《我的世界》：水上航行_files/markedwpcac21cde33bf8d04c3dc83895bd760ec.js.下载"></script>
+<script src="./Code.org - 《我的世界》：水上航行_files/commonwpf29515fd25c8371b9292.min.js.下载"></script>
+<script src="./Code.org - 《我的世界》：水上航行_files/craft_localewp7d53d2f47a70f04dce91623f37c422b9.js.下载"></script>
+<script data-appoptions="{&quot;levelGameName&quot;:&quot;Craft&quot;,&quot;skinId&quot;:&quot;craft&quot;,&quot;baseUrl&quot;:&quot;/blockly/&quot;,&quot;app&quot;:&quot;craft&quot;,&quot;droplet&quot;:false,&quot;level&quot;:{&quot;startBlocks&quot;:&quot;\u003cxml\u003e\u003cblock type=\&quot;when_run\&quot; deletable=\&quot;false\&quot; movable=\&quot;false\&quot;\u003e\u003cnext\u003e\u003cblock type=\&quot;craft_moveForward\&quot;/\u003e\u003c/next\u003e\u003c/block\u003e\u003c/xml\u003e&quot;,&quot;toolbox&quot;:&quot;\u003cxml\u003e\u003cblock type=\&quot;craft_moveForward\&quot;/\u003e\u003cblock type=\&quot;craft_turn\&quot;\u003e\u003ctitle name=\&quot;DIR\&quot;\u003eleft\u003c/title\u003e\u003c/block\u003e\u003c/xml\u003e&quot;,&quot;skin&quot;:&quot;craft&quot;,&quot;groundPlane&quot;:[&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;planksOak&quot;,&quot;planksOak&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;sand&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;stone&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;water&quot;,&quot;stone&quot;,&quot;water&quot;,&quot;water&quot;],&quot;groundDecorationPlane&quot;:[&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;tallGrass&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;tallGrass&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;],&quot;actionPlane&quot;:[&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;treeJungle&quot;,&quot;&quot;,&quot;&quot;,&quot;boatChest&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;],&quot;playerStartPosition&quot;:[4,7],&quot;gridWidth&quot;:10,&quot;gridHeight&quot;:10,&quot;playerStartDirection&quot;:0,&quot;isDaytime&quot;:true,&quot;isEventLevel&quot;:false,&quot;usePlayer&quot;:true,&quot;verificationFunction&quot;:&quot;function (verificationAPI) {\r\n  // List of x, y positions.\r\n  var successPositions = [[4, 5], [3, 4], [4, 3]];\r\n  for (var i = 0; i \u003c successPositions.length; i++) {\r\n    if (verificationAPI.isEntityAt(\&quot;Player\&quot;, successPositions[i])) {\r\n      return true;\r\n    }\r\n  }\r\n}\r\n&quot;,&quot;timeoutVerificationFunction&quot;:&quot;function (verificationAPI) {\r\n  // Fail if we hit the end of the timeout.\r\n  return false;\r\n}&quot;,&quot;failureCheckFunction&quot;:&quot;function (verificationAPI) {\r\n  // Fail instantly\r\n  return false;\r\n}&quot;,&quot;levelVerificationTimeout&quot;:30000,&quot;embed&quot;:null,&quot;instructionsImportant&quot;:false,&quot;isK1&quot;:false,&quot;neverAutoplayVideo&quot;:false,&quot;disableParamEditing&quot;:true,&quot;disableVariableEditing&quot;:false,&quot;disableProcedureAutopopulate&quot;:false,&quot;topLevelProcedureAutopopulate&quot;:false,&quot;useModalFunctionEditor&quot;:false,&quot;hideShareAndRemix&quot;:false,&quot;disableIfElseEditing&quot;:false,&quot;showTypeHints&quot;:false,&quot;includeSharedFunctions&quot;:false,&quot;freePlay&quot;:false,&quot;agentStartDirection&quot;:0,&quot;useScore&quot;:false,&quot;isAgentLevel&quot;:false,&quot;dayNightCycleStart&quot;:0,&quot;dayNightCycleTime&quot;:0,&quot;isAquaticLevel&quot;:true,&quot;boat&quot;:false,&quot;ttsShortInstructionsOverride&quot;:&quot;Collect a boat from the chest.&quot;,&quot;ttsLongInstructionsOverride&quot;:&quot;You need supplies for the voyage ahead. Collect a boat from the chest.&quot;,&quot;videoKey&quot;:&quot;mc_2018_intro&quot;,&quot;shortInstructions&quot;:&quot;从箱子中拿出一艘船。&quot;,&quot;longInstructions&quot;:&quot;您需要补给以进行航行。从**箱子**![](https://images.code.org/e0cf43fd36a50dd16ee06595047bfd8f-image-1538697999418.png) 中收集一艘**船** ![](https://images.code.org/0b3162de9dc0abf3e0890d315b8cc699-image-1538697977747.png) 。&quot;,&quot;ideal&quot;:3,&quot;showPopupOnLoad&quot;:&quot;playerSelection&quot;,&quot;sharedBlocks&quot;:[{&quot;name&quot;:&quot;craft_ifPath&quot;,&quot;pool&quot;:&quot;craft&quot;,&quot;category&quot;:&quot;&quot;,&quot;config&quot;:{&quot;func&quot;:&quot;ifPath&quot;,&quot;blockText&quot;:&quot;如果路径 {DIR}\n{STATEMENT}&quot;,&quot;args&quot;:[{&quot;name&quot;:&quot;DIR&quot;,&quot;options&quot;:[[&quot;前面&quot;,&quot;&#39;ahead&#39;&quot;],[&quot;向右转&quot;,&quot;&#39;right&#39;&quot;],[&quot;向左转&quot;,&quot;&#39;left&#39;&quot;]]},{&quot;name&quot;:&quot;STATEMENT&quot;,&quot;statement&quot;:true}],&quot;color&quot;:[197,0.88,0.78]},&quot;helperCode&quot;:&quot;function ifPath(dir, callback) {\n  var condition, blockType;\n  if (dir === &#39;ahead&#39;) {\n    condition = walkableAhead();\n  } else if (dir === &#39;right&#39;) {\n    condition = walkableToRight();\n  } else {\n    condition = walkableToLeft();\n  }\n\n  if (condition) {\n    callback();\n  }\n}&quot;},{&quot;name&quot;:&quot;craft_ifStandingOn&quot;,&quot;pool&quot;:&quot;craft&quot;,&quot;category&quot;:&quot;&quot;,&quot;config&quot;:{&quot;func&quot;:&quot;ifStandingOn&quot;,&quot;blockText&quot;:&quot;站在{TYPE}\n{STATEMENT}&quot;,&quot;args&quot;:[{&quot;name&quot;:&quot;TYPE&quot;,&quot;options&quot;:[[&quot;蓝色珊瑚&quot;,&quot;&#39;blueCoralBlock&#39;&quot;],[&quot;红色珊瑚&quot;,&quot;&#39;redCoralBlock&#39;&quot;],[&quot;沙子&quot;,&quot;&#39;sand&#39;&quot;],[&quot;深水&quot;,&quot;&#39;wool_blue&#39;&quot;],[&quot;橡木板&quot;,&quot;&#39;planksOak&#39;&quot;],[&quot;海晶灯&quot;,&quot;&#39;seaLantern&#39;&quot;]]},{&quot;name&quot;:&quot;STATEMENT&quot;,&quot;statement&quot;:true}],&quot;color&quot;:[197,0.88,0.78]},&quot;helperCode&quot;:&quot;function ifStandingOn(blockType, callback) {\n  if (getStandingOnBlockType() === blockType) {\n    callback();\n  }\n}&quot;},{&quot;name&quot;:&quot;craft_ifStandingOnLimit&quot;,&quot;pool&quot;:&quot;craft&quot;,&quot;category&quot;:&quot;&quot;,&quot;config&quot;:{&quot;func&quot;:&quot;ifStandingOnLimit&quot;,&quot;blockText&quot;:&quot;站在{TYPE}\n{STATEMENT}&quot;,&quot;args&quot;:[{&quot;name&quot;:&quot;TYPE&quot;,&quot;options&quot;:[[&quot;沙子&quot;,&quot;&#39;sand&#39;&quot;],[&quot;暗海晶石&quot;,&quot;&#39;darkPrismarine&#39;&quot;],[&quot;海晶灯&quot;,&quot;&#39;seaLantern&#39;&quot;]]},{&quot;name&quot;:&quot;STATEMENT&quot;,&quot;statement&quot;:true}],&quot;color&quot;:[197,0.88,0.78]},&quot;helperCode&quot;:&quot;function ifStandingOnLimit(blockType, callback) {\n  if (getStandingOnBlockType() === blockType) {\n    callback();\n  }\n}&quot;},{&quot;name&quot;:&quot;craft_log&quot;,&quot;pool&quot;:&quot;craft&quot;,&quot;category&quot;:&quot;&quot;,&quot;config&quot;:{&quot;func&quot;:&quot;log&quot;,&quot;blockText&quot;:&quot;日志消息 {MESSAGE}&quot;,&quot;args&quot;:[{&quot;name&quot;:&quot;MESSAGE&quot;}]},&quot;helperCode&quot;:&quot;function log(message) {\n  console.log(message);\n}&quot;},{&quot;name&quot;:&quot;craft_moveForward&quot;,&quot;pool&quot;:&quot;craft&quot;,&quot;category&quot;:&quot;&quot;,&quot;config&quot;:{&quot;func&quot;:&quot;moveForward&quot;,&quot;blockText&quot;:&quot;向前移动&quot;},&quot;helperCode&quot;:null},{&quot;name&quot;:&quot;craft_placeBlock&quot;,&quot;pool&quot;:&quot;craft&quot;,&quot;category&quot;:&quot;&quot;,&quot;config&quot;:{&quot;func&quot;:&quot;placeBlock&quot;,&quot;blockText&quot;:&quot;放下{blockType}&quot;,&quot;args&quot;:[{&quot;name&quot;:&quot;blockType&quot;,&quot;options&quot;:[[&quot;去皮橡木&quot;,&quot;\&quot;strippedOak\&quot;&quot;],[&quot;去皮深色橡木&quot;,&quot;\&quot;strippedDarkOak\&quot;&quot;],[&quot;石砖&quot;,&quot;\&quot;stoneBricks\&quot;&quot;],[&quot;苔石砖&quot;,&quot;\&quot;mossyStoneBricks\&quot;&quot;],[&quot;裂石砖&quot;,&quot;\&quot;crackedStoneBricks\&quot;&quot;],[&quot;装饰性石砖&quot;,&quot;\&quot;decorativeStoneBricks\&quot;&quot;],[&quot;管珊瑚块&quot;,&quot;\&quot;blueCoralBlock\&quot;&quot;],[&quot;脑纹珊瑚块&quot;,&quot;\&quot;pinkCoralBlock\&quot;&quot;],[&quot;气泡珊瑚块&quot;,&quot;\&quot;magentaCoralBlock\&quot;&quot;],[&quot;火珊瑚块&quot;,&quot;\&quot;redCoralBlock\&quot;&quot;],[&quot;鹿角珊瑚块&quot;,&quot;\&quot;yellowCoralBlock\&quot;&quot;],[&quot;失活的管珊瑚块&quot;,&quot;\&quot;blueDeadCoralBlock\&quot;&quot;],[&quot;失活的脑纹珊瑚块&quot;,&quot;\&quot;pinkDeadCoralBlock\&quot;&quot;],[&quot;失活的气泡珊瑚块&quot;,&quot;\&quot;magentaDeadCoralBlock\&quot;&quot;],[&quot;失活的火珊瑚块&quot;,&quot;\&quot;readDeadCoralBlock\&quot;&quot;],[&quot;失活的鹿角珊瑚块&quot;,&quot;\&quot;yellowDeadCoralBlock\&quot;&quot;],[&quot;海晶石&quot;,&quot;\&quot;prismarine\&quot;&quot;],[&quot;暗海晶石&quot;,&quot;\&quot;darkPrismarine\&quot;&quot;],[&quot;海晶灯&quot;,&quot;\&quot;seaLantern\&quot;&quot;],[&quot;霜冰&quot;,&quot;\&quot;packedIce\&quot;&quot;],[&quot;蓝冰&quot;,&quot;\&quot;blueIce\&quot;&quot;],[&quot;黑色混凝土&quot;,&quot;\&quot;blackConcrete\&quot;&quot;],[&quot;海草&quot;,&quot;\&quot;seaGrass\&quot;&quot;],[&quot;海带&quot;,&quot;\&quot;kelp\&quot;&quot;],[&quot;磨制花岗岩&quot;,&quot;\&quot;polishedGranite\&quot;&quot;]]}]},&quot;helperCode&quot;:&quot;function placeBlock(blockType) {\n  // TODO: update to take a dropdown list of options\n  api.placeBlock(null, blockType, \&quot;Player\&quot;);\n}&quot;},{&quot;name&quot;:&quot;craft_placePrismarine&quot;,&quot;pool&quot;:&quot;craft&quot;,&quot;category&quot;:&quot;&quot;,&quot;config&quot;:{&quot;func&quot;:&quot;placePrismarine&quot;,&quot;blockText&quot;:&quot;放置海晶石&quot;},&quot;helperCode&quot;:&quot;function placePrismarine() {\n  api.placeBlock(null, \&quot;prismarine\&quot;, \&quot;Player\&quot;);\n}&quot;},{&quot;name&quot;:&quot;craft_placeTorch&quot;,&quot;pool&quot;:&quot;craft&quot;,&quot;category&quot;:&quot;&quot;,&quot;config&quot;:{&quot;func&quot;:&quot;placeTorch&quot;,&quot;blockText&quot;:&quot;放下火把&quot;},&quot;helperCode&quot;:&quot;function placeTorch() {\n  api.placeBlock(null, \&quot;torch\&quot;, \&quot;Player\&quot;);\n}&quot;},{&quot;name&quot;:&quot;craft_repeatUntilConduit&quot;,&quot;pool&quot;:&quot;craft&quot;,&quot;category&quot;:&quot;&quot;,&quot;config&quot;:{&quot;func&quot;:&quot;repeatUntilConduit&quot;,&quot;color&quot;:[322,0.9,0.95],&quot;blockText&quot;:&quot;重复，直至潮涌核心完成\n{STATEMENT}&quot;,&quot;args&quot;:[{&quot;name&quot;:&quot;STATEMENT&quot;,&quot;statement&quot;:true}]},&quot;helperCode&quot;:&quot;var MAX_STEPS = 1000;\nfunction repeatUntilConduit(callback) {\n  for (var i = 0; i \u003c MAX_STEPS; i++) {\n    if (isFinished()) {\n      break;\n    }\n    callback();\n  }\n}&quot;},{&quot;name&quot;:&quot;craft_repeatUntilGoal&quot;,&quot;pool&quot;:&quot;craft&quot;,&quot;category&quot;:&quot;&quot;,&quot;config&quot;:{&quot;func&quot;:&quot;repeatUntilGoal&quot;,&quot;color&quot;:[322,0.9,0.95],&quot;blockText&quot;:&quot;重复，直至目标达成\n{STATEMENT}&quot;,&quot;args&quot;:[{&quot;name&quot;:&quot;STATEMENT&quot;,&quot;statement&quot;:true}]},&quot;helperCode&quot;:&quot;var MAX_STEPS = 1000;\nfunction repeatUntilGoal(callback) {\n  for (var i = 0; i \u003c MAX_STEPS; i++) {\n    if (isFinished()) {\n      break;\n    }\n    callback();\n  }\n}&quot;},{&quot;name&quot;:&quot;craft_spawnEntity&quot;,&quot;pool&quot;:&quot;craft&quot;,&quot;category&quot;:&quot;&quot;,&quot;config&quot;:{&quot;func&quot;:&quot;spawnEntity&quot;,&quot;blockText&quot;:&quot;生成{ENTITY}&quot;,&quot;args&quot;:[{&quot;name&quot;:&quot;ENTITY&quot;,&quot;options&quot;:[[&quot;鳕鱼&quot;,&quot;\&quot;cod\&quot;&quot;],[&quot;海豚&quot;,&quot;\&quot;dolphin\&quot;&quot;],[&quot;鲑鱼&quot;,&quot;\&quot;salmon\&quot;&quot;],[&quot;海龟&quot;,&quot;\&quot;seaTurtle\&quot;&quot;],[&quot;鱿鱼&quot;,&quot;\&quot;squid\&quot;&quot;],[&quot;热带鱼&quot;,&quot;\&quot;tropicalFish\&quot;&quot;]]}]},&quot;helperCode&quot;:&quot;function spawnEntity(entity) {\n\tapi.placeBlock(null, entity, \&quot;Player\&quot;);\n}&quot;},{&quot;name&quot;:&quot;craft_turn&quot;,&quot;pool&quot;:&quot;craft&quot;,&quot;category&quot;:&quot;&quot;,&quot;config&quot;:{&quot;func&quot;:&quot;turn&quot;,&quot;blockText&quot;:&quot;转向{DIR}&quot;,&quot;args&quot;:[{&quot;name&quot;:&quot;DIR&quot;,&quot;type&quot;:&quot;String&quot;,&quot;options&quot;:[[&quot;右 ↻&quot;,&quot;right&quot;],[&quot;左 ↺&quot;,&quot;left&quot;]]}]},&quot;helperCode&quot;:&quot;function turn(dir) {\n  if (dir === &#39;right&#39;) {\n    turnRight();\n  } else {\n    turnLeft();\n  }\n}&quot;}],&quot;levelId&quot;:&quot;custom&quot;,&quot;editCode&quot;:false,&quot;puzzle_number&quot;:1,&quot;stage_total&quot;:12,&quot;final_level&quot;:false,&quot;lastAttempt&quot;:null,&quot;submittable&quot;:false,&quot;levelVideos&quot;:[{&quot;src&quot;:&quot;https://www.youtube-nocookie.com/embed/92sMXSm4dIg/?autoplay=1\u0026cc_lang_pref=zh\u0026cc_load_policy=1\u0026enablejsapi=1\u0026iv_load_policy=3\u0026modestbranding=1\u0026rel=0\u0026showinfo=1\u0026v=92sMXSm4dIg\u0026wmode=transparent&quot;,&quot;key&quot;:&quot;mc_2018_intro&quot;,&quot;name&quot;:&quot;《我的世界》：水上航行简介&quot;,&quot;download&quot;:&quot;https://videos.code.org/levelbuilder/mc_2018_intro-mp4.mp4&quot;,&quot;thumbnail&quot;:&quot;/c/video_thumbnails/mc_2018_intro.jpg&quot;,&quot;enable_fallback&quot;:true,&quot;autoplay&quot;:true}],&quot;mapReference&quot;:null,&quot;referenceLinks&quot;:null},&quot;scriptId&quot;:353,&quot;scriptName&quot;:&quot;aquatic&quot;,&quot;textToSpeechEnabled&quot;:false,&quot;fullWidth&quot;:true,&quot;smallFooter&quot;:true,&quot;hasI18n&quot;:true,&quot;callouts&quot;:[],&quot;autoplayVideo&quot;:{&quot;src&quot;:&quot;https://www.youtube-nocookie.com/embed/92sMXSm4dIg/?autoplay=1\u0026cc_lang_pref=zh\u0026cc_load_policy=1\u0026enablejsapi=1\u0026iv_load_policy=3\u0026modestbranding=1\u0026rel=0\u0026showinfo=1\u0026v=92sMXSm4dIg\u0026wmode=transparent&quot;,&quot;key&quot;:&quot;mc_2018_intro&quot;,&quot;name&quot;:&quot;《我的世界》：水上航行简介&quot;,&quot;download&quot;:&quot;https://videos.code.org/levelbuilder/mc_2018_intro-mp4.mp4&quot;,&quot;thumbnail&quot;:&quot;/c/video_thumbnails/mc_2018_intro.jpg&quot;,&quot;enable_fallback&quot;:true,&quot;autoplay&quot;:true},&quot;postMilestoneMode&quot;:&quot;all&quot;,&quot;puzzleRatingsUrl&quot;:&quot;/puzzle_ratings&quot;,&quot;authoredHintViewRequestsUrl&quot;:&quot;/authored_hint_view_requests.json&quot;,&quot;serverLevelId&quot;:14483,&quot;stagePosition&quot;:1,&quot;levelPosition&quot;:1,&quot;publicCaching&quot;:true,&quot;hasContainedLevels&quot;:false,&quot;nextLevelUrl&quot;:&quot;/s/aquatic/stage/1/puzzle/2&quot;,&quot;isSignedIn&quot;:false,&quot;isTooYoung&quot;:false,&quot;pinWorkspaceToBottom&quot;:true,&quot;hasVerticalScrollbars&quot;:true,&quot;showExampleTestButtons&quot;:true,&quot;report&quot;:{&quot;fallback_response&quot;:{&quot;success&quot;:{&quot;timestamp&quot;:1573008692788,&quot;script_id&quot;:353,&quot;level_id&quot;:14483,&quot;total_lines&quot;:null,&quot;new_level_completed&quot;:null,&quot;level_path&quot;:&quot;/s/aquatic/stage/1/puzzle/1&quot;,&quot;redirect&quot;:&quot;/s/aquatic/stage/1/puzzle/2&quot;,&quot;phone_share_url&quot;:&quot;https://studio.code.org/sms/send&quot;,&quot;puzzle_ratings_enabled&quot;:true,&quot;activity_id&quot;:null},&quot;failure&quot;:{&quot;timestamp&quot;:1573008692789,&quot;script_id&quot;:353,&quot;level_id&quot;:14483,&quot;message&quot;:&quot;try again&quot;,&quot;phone_share_url&quot;:&quot;https://studio.code.org/sms/send&quot;,&quot;puzzle_ratings_enabled&quot;:true,&quot;activity_id&quot;:null}},&quot;callback&quot;:&quot;https://studio.code.org/milestone/0/98181/14483&quot;,&quot;sublevelCallback&quot;:null},&quot;isStartMode&quot;:false,&quot;sendToPhone&quot;:false,&quot;dialog&quot;:{&quot;skipSound&quot;:false,&quot;preTitle&quot;:null,&quot;fallbackResponse&quot;:&quot;{\&quot;success\&quot;:{\&quot;timestamp\&quot;:1573008692788,\&quot;script_id\&quot;:353,\&quot;level_id\&quot;:14483,\&quot;total_lines\&quot;:null,\&quot;new_level_completed\&quot;:null,\&quot;level_path\&quot;:\&quot;/s/aquatic/stage/1/puzzle/1\&quot;,\&quot;redirect\&quot;:\&quot;/s/aquatic/stage/1/puzzle/2\&quot;,\&quot;phone_share_url\&quot;:\&quot;https://studio.code.org/sms/send\&quot;,\&quot;puzzle_ratings_enabled\&quot;:true,\&quot;activity_id\&quot;:null},\&quot;failure\&quot;:{\&quot;timestamp\&quot;:1573008692789,\&quot;script_id\&quot;:353,\&quot;level_id\&quot;:14483,\&quot;message\&quot;:\&quot;try again\&quot;,\&quot;phone_share_url\&quot;:\&quot;https://studio.code.org/sms/send\&quot;,\&quot;puzzle_ratings_enabled\&quot;:true,\&quot;activity_id\&quot;:null}}&quot;,&quot;callback&quot;:&quot;https://studio.code.org/milestone/0/98181/14483&quot;,&quot;sublevelCallback&quot;:null,&quot;app&quot;:&quot;craft&quot;,&quot;level&quot;:&quot;custom&quot;,&quot;shouldShowDialog&quot;:true},&quot;locale&quot;:&quot;zh_cn&quot;}" src="./Code.org - 《我的世界》：水上航行_files/craftwp37d772295de516d63b04.min.js.下载"></script>
+
+<script data-scriptname="{&quot;name&quot;:&quot;《我的世界》：水上航行&quot;,&quot;href&quot;:&quot;/s/aquatic&quot;,&quot;smallText&quot;:false}" src="./Code.org - 《我的世界》：水上航行_files/_header_progresswpd1854f1293d18dfd85f8.min.js.下载" type="text/javascript"></script>
+<script src="./Code.org - 《我的世界》：水上航行_files/_headerwpe37e8693e82f69d3b197.min.js.下载" type="text/javascript"></script>
+
+
+
+<div><!-- react-empty: 1 --></div><div><div data-reactroot=""><!-- react-empty: 2 --><!-- react-empty: 3 --></div></div><svg id="blocklyDragCanvas" width="100%" height="100%"><g class="svgDragCanvas" transform="translate(362.9672546386719,289)"></g><g class="svgDragCanvas"></g></svg><div class="blocklyWidgetDiv" style="direction: ltr;"></div></body></html>

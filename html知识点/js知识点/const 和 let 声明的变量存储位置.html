@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>const 和 let 声明的变量不在 window</title>
+</head>
+<body>
+  <h2>全局作用域中，用 const 和 let 声明的变量不在 window 上，那到底在哪里？如何去获取？</h2>
+  <pre>
+      在ES5中，顶层对象的属性和全局变量是等价的，var 命令和 function 命令声明的全局变量，
+      自然也是顶层对象。
+
+      var a = 12;
+      function f(){};
+
+      console.log(window.a); // 12
+      console.log(window.f); // f(){}
+
+      但ES6规定，var 命令和 function 命令声明的全局变量，依旧是顶层对象的属性，
+      但 let命令、const命令、class命令声明的全局变量，不属于顶层对象的属性。
+
+      let aa = 1;
+      const bb = 2;
+
+      console.log(window.aa); // undefined
+      console.log(window.bb); // undefined
+
+      let 和 const 声明的全局变量并没有在全局对象中，只是一个块级作用域（Script）中
+
+      const和let会生成块级作用域，可以理解为
+
+      let a = 10;
+      const b = 20;
+      相当于：
+      (function(){
+              var  a = 10;
+              var b = 20;
+      })()
+
+      ES5没有块级作用域的概念，只有函数作用域，可以近似理解成这样。 所以外层window必然无法访问。
+  </pre>
+</body>
+</html>
+<script>
+  var a = 12;
+  function f(){};
+
+  console.log(window.a); // 12
+  console.log(window.f); // f(){}
+
+  let aa = 1;
+  debugger
+  const bb = 2;
+  console.log(aa)
+  console.log(window.aa); // undefined
+  console.log(window.bb); // undefined
+  var qq=1
+  let ww=3
+  {
+    const f = 7
+    var bs = 88
+    {
+      let cc =99
+      debugger
+    }
+  }
+</script>
